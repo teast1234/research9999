@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.idea/
+
+# 本地代碼不進公開倉庫(GitHub 只託管靜態頁面)
+*.py
+reports/**/*.txt
