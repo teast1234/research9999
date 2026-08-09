@@ -2,6 +2,11 @@
 __pycache__/
 *.pyc
 .idea/
+logs/
+dist/
+build/
+*.exe
+*.spec
 
 # 本地代碼不進公開倉庫(GitHub 只託管靜態頁面)
 *.py
