@@ -19,6 +19,8 @@ header p { color: #6b7fa3; font-size: 1.05em; }
 .card-title { font-size: 1.02em; font-weight: 650; color: #e8ecf3; margin-bottom: 6px; }
 .card-meta { display: flex; flex-wrap: wrap; gap: 12px; font-size: .82em; color: #6b7fa3; }
 .card-meta .model { color: #93c5fd; font-weight: 600; }
+.card-meta .pushed { color: #ffd591; }
+.card-meta .generated { color: #7ea6cf; }
 .badge { display: inline-block; padding: 1px 8px; border-radius: 3px; font-size: .72em; font-weight: 600; }
 .badge.ok { background: #1a3a2a; color: #4ade80; }
 .badge.warn { background: #3a2a1a; color: #fbbf24; }
@@ -37,302 +39,343 @@ footer { margin-top: 64px; text-align: center; color: #4a5568; font-size: 0.8em;
 <body>
 <div class="container">
 <header>
-<h1>�� 美股盤前研究</h1>
+<h1>美股盤前研究</h1>
 <p>AI 模型每日盤前新聞彙整 · 開盤前最重要交易資訊</p>
 </header>
 <div class="stats">
 <div class="stat"><div class="stat-num">20</div><div class="stat-label">交易日</div></div>
 <div class="stat"><div class="stat-num">41</div><div class="stat-label">報告</div></div>
 </div>
-<div class="date-group"><div class="date-header">�� 2026-08-27 (Thursday)</div><div class="card-grid">
+<div class="date-group"><div class="date-header">📅 2026-08-27 (Thursday)</div><div class="card-grid">
 <a class="card" href="reports/270826/COMBINED_gpt-5.4-mini_20260827_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
-  </div>
-</a>
-<a class="card" href="reports/270826/geotrade_20260827_0435ET.html">
-  <div class="card-title">地緣交易總表 <span class="badge geo">地緣</span></div>
-  <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-28 08:03 北京时间</span>
+    <span class="generated">生成 2026-08-28 08:00 北京时间</span>
   </div>
 </a>
 <a class="card" href="reports/270826/geotrade_reader_20260827_0513ET.html">
   <div class="card-title">地緣交易總表 <span class="badge geo">地緣</span></div>
   <div class="card-meta">
     <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-27 17:27 北京时间</span>
+    <span class="generated">生成 2026-08-27 17:13 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-26 (Wednesday)</div><div class="card-grid">
+</a>
+<a class="card" href="reports/270826/geotrade_20260827_0435ET.html">
+  <div class="card-title">地緣交易總表 <span class="badge geo">地緣</span></div>
+  <div class="card-meta">
+    <span class="model">Claude-Opus-4.8</span>
+    <span class="pushed">推送 2026-08-27 16:46 北京时间</span>
+    <span class="generated">生成 2026-08-27 16:35 北京时间</span>
+  </div>
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-26 (Wednesday)</div><div class="card-grid">
+<a class="card" href="reports/260826/morningnotes_20260826_2007ET.html">
+  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
+  <div class="card-meta">
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-27 08:12 北京时间</span>
+    <span class="generated">生成 2026-08-27 08:07 北京时间</span>
+  </div>
+</a>
 <a class="card" href="reports/260826/COMBINED_gpt-5.4-mini_20260826_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-27 08:03 北京时间</span>
+    <span class="generated">生成 2026-08-27 08:00 北京时间</span>
   </div>
 </a>
 <a class="card" href="reports/260826/morningnotes_20260826_0008ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-26 12:12 北京时间</span>
+    <span class="generated">生成 2026-08-26 12:08 北京时间</span>
   </div>
-</a>
-<a class="card" href="reports/260826/morningnotes_20260826_2007ET.html">
-  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
-  <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
-  </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-25 (Tuesday)</div><div class="card-grid">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-25 (Tuesday)</div><div class="card-grid">
 <a class="card" href="reports/250826/COMBINED_gpt-5.4-mini_20260825_2354ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-26 11:56 北京时间</span>
+    <span class="generated">生成 2026-08-26 11:54 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-24 (Monday)</div><div class="card-grid">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-24 (Monday)</div><div class="card-grid">
+<a class="card" href="reports/240826/morningnotes_20260824_2213ET.html">
+  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
+  <div class="card-meta">
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-25 10:17 北京时间</span>
+    <span class="generated">生成 2026-08-25 10:13 北京时间</span>
+  </div>
+</a>
 <a class="card" href="reports/240826/COMBINED_gpt-5.4-mini_20260824_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-25 08:03 北京时间</span>
+    <span class="generated">生成 2026-08-25 08:00 北京时间</span>
   </div>
-</a>
-<a class="card" href="reports/240826/morningnotes_20260824_2213ET.html">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-23 (Sunday)</div><div class="card-grid">
+<a class="card" href="reports/230826/morningnotes_20260823_2007ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-24 08:12 北京时间</span>
+    <span class="generated">生成 2026-08-24 08:07 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-23 (Sunday)</div><div class="card-grid">
+</a>
 <a class="card" href="reports/230826/COMBINED_gpt-5.4-mini_20260823_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-24 08:03 北京时间</span>
+    <span class="generated">生成 2026-08-24 08:00 北京时间</span>
   </div>
-</a>
-<a class="card" href="reports/230826/morningnotes_20260823_2007ET.html">
-  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
-  <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
-  </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-22 (Saturday)</div><div class="card-grid">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-22 (Saturday)</div><div class="card-grid">
 <a class="card" href="reports/220826/morningnotes_20260822_2003ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-23 08:09 北京时间</span>
+    <span class="generated">生成 2026-08-23 08:03 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-21 (Friday)</div><div class="card-grid">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-21 (Friday)</div><div class="card-grid">
 <a class="card" href="reports/210826/morningnotes_20260821_0149ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-21 13:56 北京时间</span>
+    <span class="generated">生成 2026-08-21 13:49 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-20 (Thursday)</div><div class="card-grid">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-20 (Thursday)</div><div class="card-grid">
 <a class="card" href="reports/200826/COMBINED_gpt-5.4-mini_20260820_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-21 08:02 北京时间</span>
+    <span class="generated">生成 2026-08-21 08:00 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-19 (Wednesday)</div><div class="card-grid">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-19 (Wednesday)</div><div class="card-grid">
+<a class="card" href="reports/190826/morningnotes_20260819_2007ET.html">
+  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
+  <div class="card-meta">
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-20 08:12 北京时间</span>
+    <span class="generated">生成 2026-08-20 08:07 北京时间</span>
+  </div>
+</a>
 <a class="card" href="reports/190826/COMBINED_gpt-5.4-mini_20260819_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-20 08:03 北京时间</span>
+    <span class="generated">生成 2026-08-20 08:00 北京时间</span>
   </div>
-</a>
-<a class="card" href="reports/190826/morningnotes_20260819_2007ET.html">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-18 (Tuesday)</div><div class="card-grid">
+<a class="card" href="reports/180826/morningnotes_20260818_2007ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-19 08:12 北京时间</span>
+    <span class="generated">生成 2026-08-19 08:07 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-18 (Tuesday)</div><div class="card-grid">
+</a>
 <a class="card" href="reports/180826/COMBINED_gpt-5.4-mini_20260818_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-19 08:02 北京时间</span>
+    <span class="generated">生成 2026-08-19 08:00 北京时间</span>
   </div>
-</a>
-<a class="card" href="reports/180826/morningnotes_20260818_2007ET.html">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-17 (Monday)</div><div class="card-grid">
+<a class="card" href="reports/170826/morningnotes_20260817_2007ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-18 08:11 北京时间</span>
+    <span class="generated">生成 2026-08-18 08:07 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-17 (Monday)</div><div class="card-grid">
+</a>
 <a class="card" href="reports/170826/COMBINED_gpt-5.4-mini_20260817_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-18 08:03 北京时间</span>
+    <span class="generated">生成 2026-08-18 08:00 北京时间</span>
   </div>
-</a>
-<a class="card" href="reports/170826/morningnotes_20260817_2007ET.html">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-16 (Sunday)</div><div class="card-grid">
+<a class="card" href="reports/160826/morningnotes_20260816_2007ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-17 08:12 北京时间</span>
+    <span class="generated">生成 2026-08-17 08:07 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-16 (Sunday)</div><div class="card-grid">
+</a>
 <a class="card" href="reports/160826/COMBINED_gpt-5.4-mini_20260816_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-17 08:03 北京时间</span>
+    <span class="generated">生成 2026-08-17 08:00 北京时间</span>
   </div>
-</a>
-<a class="card" href="reports/160826/morningnotes_20260816_2007ET.html">
-  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
-  <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
-  </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-15 (Saturday)</div><div class="card-grid">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-15 (Saturday)</div><div class="card-grid">
 <a class="card" href="reports/150826/morningnotes_20260815_2004ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-16 08:09 北京时间</span>
+    <span class="generated">生成 2026-08-16 08:04 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-13 (Thursday)</div><div class="card-grid">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-13 (Thursday)</div><div class="card-grid">
+<a class="card" href="reports/130826/morningnotes_20260813_2007ET.html">
+  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
+  <div class="card-meta">
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-14 08:12 北京时间</span>
+    <span class="generated">生成 2026-08-14 08:07 北京时间</span>
+  </div>
+</a>
 <a class="card" href="reports/130826/COMBINED_gpt-5.4-mini_20260813_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-14 08:03 北京时间</span>
+    <span class="generated">生成 2026-08-14 08:00 北京时间</span>
   </div>
-</a>
-<a class="card" href="reports/130826/morningnotes_20260813_2007ET.html">
-  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
-  <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
-  </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-12 (Wednesday)</div><div class="card-grid">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-12 (Wednesday)</div><div class="card-grid">
 <a class="card" href="reports/120826/COMBINED_gpt-5.4-mini_20260812_2223ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-13 10:25 北京时间</span>
+    <span class="generated">生成 2026-08-13 10:23 北京时间</span>
   </div>
 </a>
 <a class="card" href="reports/120826/morningnotes_20260812_2210ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-13 10:15 北京时间</span>
+    <span class="generated">生成 2026-08-13 10:10 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-11 (Tuesday)</div><div class="card-grid">
-<a class="card" href="reports/110826/COMBINED_gpt-5.4-mini_20260811_0003ET.html">
-  <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
-  <div class="card-meta">
-    <span class="model">gpt-5.4-mini</span>
-    <span></span>
-  </div>
-</a>
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-11 (Tuesday)</div><div class="card-grid">
 <a class="card" href="reports/110826/COMBINED_gpt-5.4-mini_20260811_2236ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
-  </div>
-</a>
-<a class="card" href="reports/110826/morningnotes_20260811_0011ET.html">
-  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
-  <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-12 10:40 北京时间</span>
+    <span class="generated">生成 2026-08-12 10:36 北京时间</span>
   </div>
 </a>
 <a class="card" href="reports/110826/morningnotes_20260811_2225ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-12 10:35 北京时间</span>
+    <span class="generated">生成 2026-08-12 10:25 北京时间</span>
   </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-09 (Sunday)</div><div class="card-grid">
+</a>
+<a class="card" href="reports/110826/morningnotes_20260811_0011ET.html">
+  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
+  <div class="card-meta">
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-11 12:15 北京时间</span>
+    <span class="generated">生成 2026-08-11 12:11 北京时间</span>
+  </div>
+</a>
+<a class="card" href="reports/110826/COMBINED_gpt-5.4-mini_20260811_0003ET.html">
+  <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
+  <div class="card-meta">
+    <span class="model">gpt-5.4-mini</span>
+    <span class="pushed">推送 2026-08-11 12:07 北京时间</span>
+    <span class="generated">生成 2026-08-11 12:03 北京时间</span>
+  </div>
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-09 (Sunday)</div><div class="card-grid">
+<a class="card" href="reports/090826/morningnotes_20260809_2007ET.html">
+  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
+  <div class="card-meta">
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-10 08:12 北京时间</span>
+    <span class="generated">生成 2026-08-10 08:07 北京时间</span>
+  </div>
+</a>
 <a class="card" href="reports/090826/COMBINED_gpt-5.4-mini_20260809_2000ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-10 08:03 北京时间</span>
+    <span class="generated">生成 2026-08-10 08:00 北京时间</span>
   </div>
-</a>
-<a class="card" href="reports/090826/morningnotes_20260809_2007ET.html">
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-08 (Saturday)</div><div class="card-grid">
+<a class="card" href="reports/080826/morningnotes_20260808_2004ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
-  </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-08 (Saturday)</div><div class="card-grid">
-<a class="card" href="reports/080826/COMBINED_gpt-5.4-mini_20260808_0236ET.html">
-  <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
-  <div class="card-meta">
-    <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-09 08:09 北京时间</span>
+    <span class="generated">生成 2026-08-09 08:04 北京时间</span>
   </div>
 </a>
 <a class="card" href="reports/080826/morningnotes_20260808_2003ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-09 08:08 北京时间</span>
+    <span class="generated">生成 2026-08-09 08:03 北京时间</span>
   </div>
 </a>
-<a class="card" href="reports/080826/morningnotes_20260808_2004ET.html">
-  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
-  <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
-  </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-06 (Thursday)</div><div class="card-grid">
-<a class="card" href="reports/060826/COMBINED_gpt-5.4-mini_20260806_2157ET.html">
+<a class="card" href="reports/080826/COMBINED_gpt-5.4-mini_20260808_0236ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-08 14:40 北京时间</span>
+    <span class="generated">生成 2026-08-08 14:36 北京时间</span>
+  </div>
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-06 (Thursday)</div><div class="card-grid">
+<a class="card" href="reports/060826/morningnotes_20260806_2347ET.html">
+  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
+  <div class="card-meta">
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-07 11:53 北京时间</span>
+    <span class="generated">生成 2026-08-07 11:47 北京时间</span>
   </div>
 </a>
 <a class="card" href="reports/060826/morningnotes_20260806_2332ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
+    <span class="model">claude-sonnet-4.6</span>
+    <span class="pushed">推送 2026-08-07 11:53 北京时间</span>
+    <span class="generated">生成 2026-08-07 11:32 北京时间</span>
   </div>
 </a>
-<a class="card" href="reports/060826/morningnotes_20260806_2347ET.html">
-  <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
-  <div class="card-meta">
-    <span class="model">Claude-Opus-4.8</span>
-    <span></span>
-  </div>
-</a></div></div><div class="date-group"><div class="date-header">�� 2026-08-05 (Wednesday)</div><div class="card-grid">
-<a class="card" href="reports/050826/COMBINED_gpt-5.4-mini_20260805_0521ET.html">
+<a class="card" href="reports/060826/COMBINED_gpt-5.4-mini_20260806_2157ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-07 10:00 北京时间</span>
+    <span class="generated">生成 2026-08-07 09:57 北京时间</span>
   </div>
-</a>
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-08-05 (Wednesday)</div><div class="card-grid">
 <a class="card" href="reports/050826/COMBINED_gpt-5.4-mini_20260805_2229ET.html">
   <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
   <div class="card-meta">
     <span class="model">gpt-5.4-mini</span>
-    <span></span>
+    <span class="pushed">推送 2026-08-06 10:32 北京时间</span>
+    <span class="generated">生成 2026-08-06 10:29 北京时间</span>
+  </div>
+</a>
+<a class="card" href="reports/050826/COMBINED_gpt-5.4-mini_20260805_0521ET.html">
+  <div class="card-title">合併報告 — gpt-5.4-mini <span class="badge combined">合併</span></div>
+  <div class="card-meta">
+    <span class="model">gpt-5.4-mini</span>
+    <span class="pushed">推送 2026-08-06 10:25 北京时间</span>
+    <span class="generated">生成 2026-08-05 17:21 北京时间</span>
   </div>
 </a></div></div>
-<footer>Last updated 2026-08-27 20:03 ET · Powered by Poe API · Hosted on GitHub Pages</footer>
+<footer>Last updated 2026-08-28 12:36 北京时间 · Powered by Poe API · Hosted on GitHub Pages</footer>
 </div>
 </body>
 </html>
