@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="report-type" content="morningnotes">
+<meta name="report-model" content="claude-sonnet-4.6">
+<meta name="report-generated" content="2026-08-29 20:03:52 EDT">
+<meta name="report-source" content="Morning Notes_claude-opus-4.8_20260829_2000ET.txt">
+<title>Morning Notes (Formatted) — Morning Notes</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #0b1a2e;
+  color: #dbe6f5;
+  line-height: 1.72;
+}
+.container { max-width: 980px; margin: 0 auto; padding: 34px 22px 44px; }
+nav { margin-bottom: 20px; }
+nav a { color: #7fbfff; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+header { border-bottom: 1px solid #18375f; padding-bottom: 18px; margin-bottom: 24px; }
+header h1 { font-size: 1.55em; color: #ffffff; margin-bottom: 8px; }
+.meta { color: #a4c3e8; font-size: 0.86em; display: flex; flex-wrap: wrap; gap: 12px; }
+.report-body h1, .report-body h2, .report-body h3 { color: #ffffff; margin: 22px 0 10px; }
+.report-body h4 { color: #9fd0ff; margin: 16px 0 8px; font-size: 1.02em; }
+.report-body p { margin: 0 0 10px; }
+.report-body { overflow-x: auto; }
+.report-body ul, .report-body ol { margin: 0 0 12px; padding-left: 24px; }
+.report-body li { margin: 0 0 6px; }
+.report-body blockquote {
+  border-left: 3px solid #2d5f98;
+  background: #0f2540;
+  padding: 8px 12px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+}
+.report-body table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  margin: 14px 0 22px;
+  font-size: 0.86em;
+  background: #0c1f38;
+}
+.report-body th, .report-body td {
+  border: 1px solid #18375f;
+  text-align: left;
+  padding: 9px 10px;
+  vertical-align: top;
+  word-break: break-word;
+}
+.report-body th {
+  color: #ffd591;
+  font-weight: 650;
+  white-space: nowrap;
+  background: #122844;
+}
+.report-body td:first-child { color: #ffffff; font-weight: 600; }
+.report-body code { background: #0f2540; color: #ffd591; padding: 2px 6px; border-radius: 4px; }
+.report-body a { color: #7fbfff; }
+footer { margin-top: 28px; border-top: 1px solid #18375f; padding-top: 14px; color: #7ea6cf; font-size: 0.82em; }
+.c-gold { color: #ffd591; }
+.c-green { color: #6ee7a8; }
+.c-red { color: #ff8f8f; }
+.c-blue { color: #7fbfff; }
+.c-white { color: #ffffff; }
+.c-orange { color: #ffb454; }
+.c-grey, .c-gray { color: #9ca3af; }
+.c-cyan { color: #67e8f9; }
+.c-purple { color: #c4b5fd; }
+</style>
+</head>
+<body>
+<div class="container">
+<nav><a href="../../index.html">← 返回首頁</a> · <a href="morningnotes_20260829_2003ET.md">Markdown 原文</a></nav>
+<header>
+  <h1>Morning Notes (Formatted)</h1>
+  <div class="meta">
+    <span>Generated: 2026-08-29 20:03:52 EDT</span>
+    <span>Model: claude-sonnet-4.6</span>
+    <span>Source: Morning Notes_claude-opus-4.8_20260829_2000ET.txt</span>
+  </div>
+</header>
+<div class="report-body">
+<p><code>`</code>html</p>
+<p><!DOCTYPE html></p>
+<p><html lang="en"></p>
+<p><head></p>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><title>Morning Notes — Saturday, August 29, 2026</title></p>
+<p><style></p>
+<p>  /<em> ── Reset & base ── </em>/</p>
+<p>  <em>, </em>::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p></p>
+<p>  body {</p>
+<p>    background: #1a1a1a;</p>
+<p>    color: #e8e8e8;</p>
+<p>    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;</p>
+<p>    font-size: 15px;</p>
+<p>    line-height: 1.7;</p>
+<p>    padding: 24px 16px 60px;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Colour tokens ── </em>/</p>
+<p>  .gold   { color: #ffd591; }</p>
+<p>  .green  { color: #6ee7a8; }</p>
+<p>  .red    { color: #ff8f8f; }</p>
+<p>  .blue   { color: #7fbfff; }</p>
+<p>  .white  { color: #ffffff; }</p>
+<p>  .orange { color: #ffb454; }</p>
+<p></p>
+<p>  /<em> ── Layout wrapper ── </em>/</p>
+<p>  .page { max-width: 900px; margin: 0 auto; }</p>
+<p></p>
+<p>  /<em> ── File meta bar ── </em>/</p>
+<p>  .file-meta {</p>
+<p>    font-size: 11px;</p>
+<p>    color: #666;</p>
+<p>    border-bottom: 1px solid #2e2e2e;</p>
+<p>    padding-bottom: 8px;</p>
+<p>    margin-bottom: 20px;</p>
+<p>    letter-spacing: .03em;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Page header ── </em>/</p>
+<p>  .page-header {</p>
+<p>    background: linear-gradient(135deg, #1e1e2e 0%, #12121a 100%);</p>
+<p>    border: 1px solid #2e2e3e;</p>
+<p>    border-radius: 12px;</p>
+<p>    padding: 24px 28px 20px;</p>
+<p>    margin-bottom: 24px;</p>
+<p>  }</p>
+<p>  .page-header h1 {</p>
+<p>    font-size: 22px;</p>
+<p>    font-weight: 700;</p>
+<p>    color: #ffd591;</p>
+<p>    letter-spacing: .04em;</p>
+<p>    margin-bottom: 4px;</p>
+<p>  }</p>
+<p>  .page-header .sub {</p>
+<p>    font-size: 12px;</p>
+<p>    color: #888;</p>
+<p>    letter-spacing: .08em;</p>
+<p>    text-transform: uppercase;</p>
+<p>    margin-bottom: 14px;</p>
+<p>  }</p>
+<p>  .banner-tags {</p>
+<p>    display: flex;</p>
+<p>    flex-wrap: wrap;</p>
+<p>    gap: 8px;</p>
+<p>    margin-top: 10px;</p>
+<p>  }</p>
+<p>  .btag {</p>
+<p>    font-size: 11px;</p>
+<p>    font-weight: 700;</p>
+<p>    letter-spacing: .06em;</p>
+<p>    padding: 3px 10px;</p>
+<p>    border-radius: 20px;</p>
+<p>    text-transform: uppercase;</p>
+<p>  }</p>
+<p>  .btag-red    { background: #3a1a1a; color: #ff8f8f; border: 1px solid #5a2a2a; }</p>
+<p>  .btag-gold   { background: #2e2510; color: #ffd591; border: 1px solid #4a3a18; }</p>
+<p>  .btag-blue   { background: #0e1e30; color: #7fbfff; border: 1px solid #1a3a58; }</p>
+<p></p>
+<p>  /<em> ── Legend box ── </em>/</p>
+<p>  .legend {</p>
+<p>    background: #1e1e1e;</p>
+<p>    border: 1px solid #2e2e2e;</p>
+<p>    border-radius: 10px;</p>
+<p>    padding: 14px 18px;</p>
+<p>    margin-bottom: 24px;</p>
+<p>    font-size: 13px;</p>
+<p>  }</p>
+<p>  .legend .leg-title { color: #ffd591; font-weight: 700; margin-bottom: 8px; }</p>
+<p>  .legend ul { list-style: none; }</p>
+<p>  .legend ul li { margin-bottom: 3px; }</p>
+<p></p>
+<p>  /<em> ── Setup callout ── </em>/</p>
+<p>  .setup-box {</p>
+<p>    background: linear-gradient(135deg, #1e1a10 0%, #12100a 100%);</p>
+<p>    border-left: 4px solid #ffd591;</p>
+<p>    border-radius: 0 10px 10px 0;</p>
+<p>    padding: 18px 22px;</p>
+<p>    margin-bottom: 28px;</p>
+<p>    font-size: 14px;</p>
+<p>  }</p>
+<p>  .setup-box .setup-label {</p>
+<p>    font-size: 11px;</p>
+<p>    font-weight: 700;</p>
+<p>    letter-spacing: .1em;</p>
+<p>    color: #ffd591;</p>
+<p>    text-transform: uppercase;</p>
+<p>    margin-bottom: 8px;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Section blocks ── </em>/</p>
+<p>  .section {</p>
+<p>    background: #1e1e1e;</p>
+<p>    border: 1px solid #2a2a2a;</p>
+<p>    border-radius: 12px;</p>
+<p>    padding: 22px 24px;</p>
+<p>    margin-bottom: 22px;</p>
+<p>  }</p>
+<p>  .section-title {</p>
+<p>    font-size: 16px;</p>
+<p>    font-weight: 700;</p>
+<p>    color: #ffd591;</p>
+<p>    margin-bottom: 16px;</p>
+<p>    padding-bottom: 10px;</p>
+<p>    border-bottom: 1px solid #2e2e2e;</p>
+<p>    letter-spacing: .02em;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Snapshot table ── </em>/</p>
+<p>  .snap-table {</p>
+<p>    width: 100%;</p>
+<p>    border-collapse: collapse;</p>
+<p>    font-size: 13.5px;</p>
+<p>    margin-bottom: 16px;</p>
+<p>  }</p>
+<p>  .snap-table th {</p>
+<p>    background: #252525;</p>
+<p>    color: #888;</p>
+<p>    font-size: 11px;</p>
+<p>    letter-spacing: .08em;</p>
+<p>    text-transform: uppercase;</p>
+<p>    padding: 8px 12px;</p>
+<p>    text-align: left;</p>
+<p>    border-bottom: 1px solid #333;</p>
+<p>  }</p>
+<p>  .snap-table td {</p>
+<p>    padding: 8px 12px;</p>
+<p>    border-bottom: 1px solid #242424;</p>
+<p>    vertical-align: top;</p>
+<p>  }</p>
+<p>  .snap-table tr:last-child td { border-bottom: none; }</p>
+<p>  .snap-table tr:hover td { background: #222; }</p>
+<p>  .asset-name { font-weight: 600; color: #e8e8e8; }</p>
+<p>  .asset-val  { font-weight: 700; font-family: 'Courier New', monospace; }</p>
+<p></p>
+<p>  /<em> ── Trade table ── </em>/</p>
+<p>  .trade-table {</p>
+<p>    width: 100%;</p>
+<p>    border-collapse: collapse;</p>
+<p>    font-size: 13px;</p>
+<p>    margin-top: 8px;</p>
+<p>  }</p>
+<p>  .trade-table th {</p>
+<p>    background: #252525;</p>
+<p>    color: #888;</p>
+<p>    font-size: 11px;</p>
+<p>    letter-spacing: .08em;</p>
+<p>    text-transform: uppercase;</p>
+<p>    padding: 8px 12px;</p>
+<p>    text-align: left;</p>
+<p>    border-bottom: 1px solid #333;</p>
+<p>  }</p>
+<p>  .trade-table td {</p>
+<p>    padding: 9px 12px;</p>
+<p>    border-bottom: 1px solid #242424;</p>
+<p>    vertical-align: top;</p>
+<p>  }</p>
+<p>  .trade-table tr:last-child td { border-bottom: none; }</p>
+<p>  .trade-table tr:hover td { background: #222; }</p>
+<p>  .score-badge {</p>
+<p>    display: inline-block;</p>
+<p>    padding: 2px 9px;</p>
+<p>    border-radius: 12px;</p>
+<p>    font-weight: 700;</p>
+<p>    font-size: 13px;</p>
+<p>    font-family: 'Courier New', monospace;</p>
+<p>    background: #2a2a10;</p>
+<p>    color: #ffd591;</p>
+<p>    border: 1px solid #4a3a18;</p>
+<p>  }</p>
+<p>  .wr-text {</p>
+<p>    font-family: 'Courier New', monospace;</p>
+<p>    color: #7fbfff;</p>
+<p>    font-size: 12px;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Bullet lists ── </em>/</p>
+<p>  .bullet-list { list-style: none; }</p>
+<p>  .bullet-list li {</p>
+<p>    padding: 6px 0 6px 0;</p>
+<p>    border-bottom: 1px solid #242424;</p>
+<p>    font-size: 14px;</p>
+<p>    line-height: 1.65;</p>
+<p>  }</p>
+<p>  .bullet-list li:last-child { border-bottom: none; }</p>
+<p></p>
+<p>  /<em> ── Inference / read box ── </em>/</p>
+<p>  .read-box {</p>
+<p>    background: #161616;</p>
+<p>    border-left: 3px solid #ff8f8f;</p>
+<p>    border-radius: 0 8px 8px 0;</p>
+<p>    padding: 14px 18px;</p>
+<p>    margin-top: 14px;</p>
+<p>    font-size: 13.5px;</p>
+<p>    line-height: 1.65;</p>
+<p>  }</p>
+<p>  .read-label {</p>
+<p>    font-size: 10px;</p>
+<p>    font-weight: 700;</p>
+<p>    letter-spacing: .12em;</p>
+<p>    color: #ff8f8f;</p>
+<p>    text-transform: uppercase;</p>
+<p>    margin-bottom: 6px;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Sub-section headers ── </em>/</p>
+<p>  .sub-head {</p>
+<p>    font-size: 13px;</p>
+<p>    font-weight: 700;</p>
+<p>    letter-spacing: .05em;</p>
+<p>    text-transform: uppercase;</p>
+<p>    color: #ffb454;</p>
+<p>    margin: 16px 0 8px;</p>
+<p>    padding-bottom: 4px;</p>
+<p>    border-bottom: 1px dashed #333;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Calendar items ── </em>/</p>
+<p>  .cal-item {</p>
+<p>    display: flex;</p>
+<p>    gap: 12px;</p>
+<p>    padding: 8px 0;</p>
+<p>    border-bottom: 1px solid #242424;</p>
+<p>    font-size: 14px;</p>
+<p>  }</p>
+<p>  .cal-item:last-child { border-bottom: none; }</p>
+<p>  .cal-date {</p>
+<p>    min-width: 130px;</p>
+<p>    font-weight: 700;</p>
+<p>    color: #ffd591;</p>
+<p>    font-size: 13px;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Top-5 list ── </em>/</p>
+<p>  .top5-item {</p>
+<p>    display: flex;</p>
+<p>    gap: 14px;</p>
+<p>    padding: 12px 0;</p>
+<p>    border-bottom: 1px solid #242424;</p>
+<p>    font-size: 14px;</p>
+<p>  }</p>
+<p>  .top5-item:last-child { border-bottom: none; }</p>
+<p>  .top5-num {</p>
+<p>    min-width: 28px;</p>
+<p>    height: 28px;</p>
+<p>    border-radius: 50%;</p>
+<p>    background: #2a2a10;</p>
+<p>    border: 1px solid #4a3a18;</p>
+<p>    color: #ffd591;</p>
+<p>    font-weight: 700;</p>
+<p>    font-size: 14px;</p>
+<p>    display: flex;</p>
+<p>    align-items: center;</p>
+<p>    justify-content: center;</p>
+<p>    flex-shrink: 0;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Tactical bullets ── </em>/</p>
+<p>  .tac-item {</p>
+<p>    padding: 10px 0;</p>
+<p>    border-bottom: 1px solid #242424;</p>
+<p>    font-size: 14px;</p>
+<p>  }</p>
+<p>  .tac-item:last-child { border-bottom: none; }</p>
+<p>  .tac-label {</p>
+<p>    font-weight: 700;</p>
+<p>    color: #ffd591;</p>
+<p>    display: inline;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Verify box ── </em>/</p>
+<p>  .verify-box {</p>
+<p>    background: #161620;</p>
+<p>    border: 1px solid #1e2030;</p>
+<p>    border-radius: 8px;</p>
+<p>    padding: 12px 16px;</p>
+<p>    font-size: 13px;</p>
+<p>    margin-top: 14px;</p>
+<p>    color: #7fbfff;</p>
+<p>  }</p>
+<p>  .verify-label {</p>
+<p>    font-size: 10px;</p>
+<p>    font-weight: 700;</p>
+<p>    letter-spacing: .12em;</p>
+<p>    color: #7fbfff;</p>
+<p>    text-transform: uppercase;</p>
+<p>    margin-bottom: 5px;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── ONE THING box ── </em>/</p>
+<p>  .one-thing {</p>
+<p>    background: linear-gradient(135deg, #1a1020 0%, #100a18 100%);</p>
+<p>    border: 1px solid #3a2a4a;</p>
+<p>    border-radius: 12px;</p>
+<p>    padding: 22px 26px;</p>
+<p>    margin-bottom: 22px;</p>
+<p>  }</p>
+<p>  .one-thing-title {</p>
+<p>    font-size: 15px;</p>
+<p>    font-weight: 700;</p>
+<p>    color: #ffd591;</p>
+<p>    letter-spacing: .04em;</p>
+<p>    margin-bottom: 12px;</p>
+<p>    text-transform: uppercase;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Footer ── </em>/</p>
+<p>  .footer {</p>
+<p>    border-top: 1px solid #2a2a2a;</p>
+<p>    padding-top: 16px;</p>
+<p>    font-size: 12px;</p>
+<p>    color: #555;</p>
+<p>    line-height: 1.7;</p>
+<p>  }</p>
+<p></p>
+<p>  /<em> ── Inline highlight pills ── </em>/</p>
+<p>  .pill {</p>
+<p>    display: inline-block;</p>
+<p>    padding: 1px 7px;</p>
+<p>    border-radius: 10px;</p>
+<p>    font-size: 12px;</p>
+<p>    font-weight: 600;</p>
+<p>    margin: 0 1px;</p>
+<p>  }</p>
+<p>  .pill-green  { background: #0d2e1a; color: #6ee7a8; border: 1px solid #1a5a32; }</p>
+<p>  .pill-yellow { background: #2e2510; color: #ffd591; border: 1px solid #4a3a18; }</p>
+<p>  .pill-red    { background: #2e0e0e; color: #ff8f8f; border: 1px solid #5a1a1a; }</p>
+<p></p>
+<p>  /<em> ── Sector grid ── </em>/</p>
+<p>  .sector-grid {</p>
+<p>    display: grid;</p>
+<p>    grid-template-columns: 1fr 1fr;</p>
+<p>    gap: 10px;</p>
+<p>    margin-top: 8px;</p>
+<p>  }</p>
+<p>  @media (max-width: 600px) { .sector-grid { grid-template-columns: 1fr; } }</p>
+<p>  .sector-card {</p>
+<p>    background: #181818;</p>
+<p>    border: 1px solid #2a2a2a;</p>
+<p>    border-radius: 8px;</p>
+<p>    padding: 12px 14px;</p>
+<p>    font-size: 13px;</p>
+<p>  }</p>
+<p>  .sc-bull { border-left: 3px solid #6ee7a8; }</p>
+<p>  .sc-bear { border-left: 3px solid #ff8f8f; }</p>
+<p>  .sc-neut { border-left: 3px solid #ffd591; }</p>
+<p>  .sc-title { font-weight: 700; margin-bottom: 4px; font-size: 13.5px; }</p>
+<p></p>
+<p>  strong { color: #ffffff; }</p>
+<p>  em     { color: #ffb454; font-style: normal; font-weight: 600; }</p>
+<p></p>
+<p>  /<em> responsive table scroll </em>/</p>
+<p>  .tbl-wrap { overflow-x: auto; }</p>
+<p></style></p>
+<p></head></p>
+<p><body></p>
+<p><div class="page"></p>
+<p></p>
+<p>  <!-- File meta --></p>
+<p>  <div class="file-meta"></p>
+<p>    📄 來源檔案: Morning Notes_claude-opus-4.8_20260829_2000ET.txt &nbsp;·&nbsp;</p>
+<p>    Generated: 2026-08-29 20:00:02 EDT &nbsp;·&nbsp;</p>
+<p>    Model: claude-opus-4.8 &nbsp;·&nbsp;</p>
+<p>    WebSearch: NO — 未偵測到搜尋，內容可能不可靠 &nbsp;·&nbsp;</p>
+<p>    Incomplete: NO</p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- Page header --></p>
+<p>  <div class="page-header"></p>
+<p>    <div class="sub">🌅 Global Macro Morning Note</div></p>
+<p>    <h1>Saturday, August 29, 2026 · Weekend Edition</h1></p>
+<p>    <div style="font-size:13px; color:#888; margin-top:4px;"></p>
+<p>      All times ET &nbsp;·&nbsp; Data as of Friday, Aug 28 close</p>
+<p>    </div></p>
+<p>    <div class="banner-tags" style="margin-top:14px;"></p>
+<p>      <span class="btag btag-red">🔴 Warsh Goes Hawkish</span></p>
+<p>      <span class="btag btag-gold">⭐ September = Coin-Flip</span></p>
+<p>      <span class="btag btag-blue">⚠️ Sanctions D-Day Week</span></p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- Legend --></p>
+<p>  <div class="legend"></p>
+<p>    <div class="leg-title">🔑 COLOR &amp; SYMBOL KEY</div></p>
+<p>    <ul></p>
+<p>      <li>🟩 <span class="green"><strong>GREEN = confirmed/verified fact</strong></span> — price prints, event facts</li></p>
+<p>      <li>🟨 <span class="gold"><strong>YELLOW = consensus/estimate/market-implied</strong></span> — forecasts, odds</li></p>
+<p>      <li>🟥 <span class="red"><strong>RED = my inference/tactical view</strong></span> — NOT fact: scores, positioning, reads</li></p>
+<p>      <li>🔴 bearish/risk-off &nbsp;·&nbsp; 🟢 bullish/constructive &nbsp;·&nbsp; 🟡 neutral/mixed &nbsp;·&nbsp; ⭐ top-tier catalyst &nbsp;·&nbsp; ⚠️ watch-item</li></p>
+<p>    </ul></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- Setup --></p>
+<p>  <div class="setup-box"></p>
+<p>    <div class="setup-label">⚡ The Setup</div></p>
+<p>    <strong class="gold">WARSH FLIPPED THE SCRIPT; SEPTEMBER IS NOW A LIVE HIKE.</strong></p>
+<p>    The week's decisive event wasn't a data print — it was the Fed Chair's first Jackson Hole address on</p>
+<p>    Friday, Aug 28. Rate-hike odds spiked after Chairman <strong>Kevin Warsh</strong> delivered a hawkish message:</p>
+<p>    inflation remains too high, the labor market is effectively at full employment, and financial conditions</p>
+<p>    may not be restraining the economy much at all.</p>
+<p>    <br><br></p>
+<p>    Traders of fed funds futures now see a <span class="gold"><strong>~56% chance of a quarter-point hike in September</strong></span>,</p>
+<p>    per the CME's FedWatch tool. On Polymarket, speculators indicated <span class="gold">49% odds</span> that the Fed raises rates.</p>
+<p>    The tape absorbed it in a split fashion: the S&amp;P 500 fell on Friday but still notched a winning week.</p>
+<p>    The index lost <span class="red">0.25%</span>, closing at <strong>7,711.76</strong>; the Nasdaq slid <span class="red">0.52%</span> to <strong>26,402.42</strong>,</p>
+<p>    weighed by losses in semiconductor stocks such as Nvidia and Intel. The Dow was down <span class="red">9.45 points (−0.02%)</span>,</p>
+<p>    ending at <strong>53,559.99</strong>.</p>
+<p>    <br><br></p>
+<p>    <strong class="orange">Two weekend fronts to watch:</strong></p>
+<p>    the U.S.–Iran sanctions campaign (<em>"Operation Economic Outcast"</em>) and whether the Iran–Oman Hormuz framework survives IRGC pushback.</p>
+<p>    Markets reopen <span class="green"><strong>Monday, Sept 1</strong></span></p>
+<p>    (note: <span class="gold">Labor Day is Monday, Sept 7</span> — this is a <em>full trading week</em> ahead).</p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 0: SNAPSHOT ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">📊 SNAPSHOT <span style="font-weight:400; font-size:13px; color:#888;">(Friday, Aug 28 close — confirmed)</span></div></p>
+<p>    <div class="tbl-wrap"></p>
+<p>      <table class="snap-table"></p>
+<p>        <thead></p>
+<p>          <tr></p>
+<p>            <th>Asset</th></p>
+<p>            <th>Latest</th></p>
+<p>            <th>Signal</th></p>
+<p>          </tr></p>
+<p>        </thead></p>
+<p>        <tbody></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 Dow Jones</td></p>
+<p>            <td class="asset-val red">53,559.99 <span style="font-size:12px;">(−0.02%)</span></td></p>
+<p>            <td class="green">Flat; +0.5% on week</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 S&amp;P 500</td></p>
+<p>            <td class="asset-val red">7,711.76 <span style="font-size:12px;">(−0.25%)</span></td></p>
+<p>            <td class="green">+0.5% on week</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 Nasdaq Comp</td></p>
+<p>            <td class="asset-val red">26,402.42 <span style="font-size:12px;">(−0.52%)</span></td></p>
+<p>            <td class="gold">+0.9% on week; chip drag</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 10Y UST Yield</td></p>
+<p>            <td class="asset-val red">~4.72%</td></p>
+<p>            <td class="red">Rose post-Warsh</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 2Y UST Yield</td></p>
+<p>            <td class="asset-val red">~4.32–4.34%</td></p>
+<p>            <td class="red">Highest since late July</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 30Y UST Yield</td></p>
+<p>            <td class="asset-val red">~5.20%</td></p>
+<p>            <td class="red">Near cycle high</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟨 Sept Hike Odds (CME)</td></p>
+<p>            <td class="asset-val gold">~56–59%</td></p>
+<p>            <td class="red">Up from ~35% Thursday</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 Brent Crude</td></p>
+<p>            <td class="asset-val red">~$89.3</td></p>
+<p>            <td class="red">−5%+ on week</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 WTI Crude</td></p>
+<p>            <td class="asset-val">~$83.8</td></p>
+<p>            <td class="gold">Off highs</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 DXY (US Dollar Index)</td></p>
+<p>            <td class="asset-val green">~99.66</td></p>
+<p>            <td class="green">+0.6% post-Warsh</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td class="asset-name">🟩 Gold</td></p>
+<p>            <td class="asset-val green">~$4,700 area</td></p>
+<p>            <td class="green">Firm</td></p>
+<p>          </tr></p>
+<p>        </tbody></p>
+<p>      </table></p>
+<p>    </div></p>
+<p></p>
+<p>    <ul class="bullet-list" style="margin-top:14px;"></p>
+<p>      <li></p>
+<p>        🔴 🟩 <strong>Friday's Dow drags:</strong></p>
+<p>        losses led by <span class="red">Nvidia (−4.45%)</span>, <span class="red">3M (−2.56%)</span>, and <span class="red">Honeywell International (−2.19%)</span>.</p>
+<p>        &nbsp;🟢 🟩 <strong>Offsets — top gainers:</strong></p>
+<p>        <span class="green">Amazon (+4.02%)</span>, <span class="green">Salesforce (+3.06%)</span>, <span class="green">Nike (+3.02%)</span>.</p>
+<p>      </li></p>
+<p>      <li></p>
+<p>        🔴 🟩 <strong>Chip pain persisted despite Nvidia's blowout:</strong></p>
+<p>        <span class="red">Marvell fell 10.3%</span> despite beating earnings estimates and raising its outlook.</p>
+<p>      </li></p>
+<p>      <li></p>
+<p>        🟢 🟩 <strong>Weekly scoreboard:</strong></p>
+<p>        S&amp;P 500 advanced <span class="green">+0.5%</span> on the week; Nasdaq gained <span class="green">+0.9%</span>;</p>
+<p>        Dow climbed <span class="green">+0.5%</span> for its <em>first winning week in three</em>.</p>
+<p>      </li></p>
+<p>    </ul></p>
+<p></p>
+<p>    <div class="read-box"></p>
+<p>      <div class="read-label">🟥 The Framing</div></p>
+<p>      A hawkish Fed pivot met a still-record equity tape — and the market chose <em>rotation, not repricing lower.</em></p>
+<p>      Amazon / Salesforce / Nike (mega-cap breadth, software, consumer) led while semis lagged.</p>
+<p>      The <strong class="white">"sell the AI-hardware, own the rest"</strong> theme is now colliding with a genuine rate-hike scare.</p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 1: US–IRAN ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">🛑 1. US–IRAN — ⭐ "OPERATION ECONOMIC OUTCAST" GRINDS ON; IRGC CLAIMS HORMUZ CONTROL, DEAL STILL UNIMPLEMENTED</div></p>
+<p></p>
+<p>    <div class="sub-head">⭐ Weekend State of Play (🟩 confirmed, Aug 28–29)</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🔴 🟩 <strong>Blockade is biting harder:</strong> U.S. Central Command reported an ongoing blockade of Iranian ports has redirected <span class="red">82 commercial ships</span>. Traffic in the Strait of Hormuz remains below pre-war levels.</li></p>
+<p>      <li>🔴 🟩 <strong>New sanctions action Saturday:</strong> Treasury Department is acting against a UAE bank to <em>"cut off a key financial lifeline and sanctions evasion vehicle for the Iranian regime."</em> The U.S. war against Iran, which began Feb. 28, has now passed the <span class="red">6-month mark</span>.</li></p>
+<p>      <li>🔴 🟩 <strong>IRGC directly contradicts the U.S. "open strait" narrative:</strong> the IRGC Navy argued Saturday it has <em>full control</em> over the Strait of Hormuz. <span class="red">"The statements by U.S. officials regarding the Strait of Hormuz being open are an obvious lie,"</span> per Tasnim. <em>"The control of the warriors of Islam over this strategic waterway is completely decisive."</em></li></p>
+<p>      <li>🟨 🟩 <strong>U.S. rebuttal:</strong> U.S. Central Command told Fox News Digital that <span class="green">"Iran does not control the Strait of Hormuz."</span> <em>"The strait is an international waterway that commercial vessels continue to transit."</em></li></p>
+<p>    </ul></p>
+<p></p>
+<p>    <div class="sub-head">⚠️ Why the Hormuz "Deal" Is Not a Deal Yet (🟩 confirmed)</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🟡 🟩 <strong>A framework exists, but conditioned:</strong> Iran and Oman have reached an understanding over the Strait of Hormuz, but Tehran says it <em>will not be implemented</em> until the U.S. fulfills commitments under the Islamabad memorandum of understanding (per Iran International).</li></p>
+<p>      <li>🟡 🟩 <strong>Mechanics agreed to date:</strong> Iran and Oman outlined a proposal to jointly establish a temporary shipping channel through the Strait, discussing a <em>"phased framework"</em> for a joint project facilitating a <em>"temporary shipping corridor"</em> and to <em>"clear mines."</em></li></p>
+<p>      <li>🔴 🟩 <strong>Revenue-sharing agreed, but no reopening promised:</strong> Iran and Oman agreed on a revenue-sharing framework, although Tehran emphasized this <span class="red">does not imply an immediate reopening</span>.</li></p>
+<p>      <li>🔴 🟩 <strong>Washington won't revive the collapsed June deal:</strong> the Trump administration reportedly told mediators it <span class="red">does not intend to revive</span> the terms of a preliminary June agreement that subsequently collapsed.</li></p>
+<p>      <li>⚠️ 🟩 <strong>Diplomats may lack authority:</strong> the WSJ reported that Arab mediators doubt Iran's diplomats have the authority to deliver any Hormuz deal they sign, as hardliners accuse the negotiating team of giving too much away.</li></p>
+<p>    </ul></p>
+<p></p>
+<p>    <div class="sub-head">⚠️ Hard Facts on the Ground (🟩 confirmed)</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🔴 🟩 <strong>Humanitarian toll:</strong> at least <span class="red">6,000 sailors</span> remain stranded aboard hundreds of ships in the Persian Gulf six months into the war. The IMO said <span class="red">19 seafarers</span> have been killed since Feb. 28. At least <span class="red">70 attacks on international shipping</span> have been recorded during the war.</li></p>
+<p>      <li>🔴 🟩 <strong>Scale of the chokepoint:</strong> shipping through the Strait remains well below normal despite U.S. efforts. Before the war, roughly <span class="gold">20% of the world's traded oil and natural gas</span> passed through the Strait of Hormuz.</li></p>
+<p>      <li>🔴 🟩 <strong>China pushed back on sanctions:</strong> Beijing warned U.S. sanctions on Iran <span class="red">"will only further intensify tensions"</span> and that China's cooperation with Iran should not be disrupted — a day after Bessent vowed an <em>"economic D-Day"</em> for countries buying Iranian oil.</li></p>
+<p>      <li>🔴 🟩 <strong>Iran's economy is buckling:</strong> Iran's rial dropped to a <span class="red">record low of two million against the US dollar</span>. Drivers in Tehran face long lines at gas stations and temporary fuel shortages.</li></p>
+<p>      <li>🔴 🟩 <strong>Lebanon/Gaza still kinetic:</strong> the IDF struck a Hamas commander in Gaza, as Israel defends itself from Iran-backed Hezbollah threats in Lebanon.</li></p>
+<p>    </ul></p>
+<p></p>
+<p>    <div class="read-box"></p>
+<p>      <div class="read-label">🟥 Read</div></p>
+<p>      This is now unambiguously an <strong class="white">economic-attrition war, not an imminent-supply-shock war</strong> — which is exactly why oil has bled ~5% on the week even as the IRGC crows about controlling the strait. The Iran–Oman "framework" is a political artifact: revenue-sharing on paper, but Tehran won't implement until the U.S. lifts pressure, Washington won't lift pressure first, and the diplomats reportedly can't even guarantee delivery.</p>
+<p>      <br><br></p>
+<p>      <strong class="red">The tail risk has shifted from "war closes the strait" to "sanctions squeeze forces a violent Iranian response."</strong> Keep cheap oil-call convexity — the downside is priced (economic confrontation), but the upside tail (a cornered Iran lashing out, a China/secondary-sanctions escalation) is decidedly not.</p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 2: AI / TECH ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">🤖 2. AI / TECH — ⭐ NVIDIA'S BLOWOUT COULDN'T LIFT SEMIS; THE "CIRCULAR FINANCING" WORRY GETS REAL</div></p>
+<p></p>
+<p>    <div class="sub-head">⭐ Nvidia (NVDA) — A Historic Quarter, Then a Self-Inflicted Wobble (🟩 confirmed)</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🟢 🟩 <strong>The blowout print (reported Aug 26):</strong> revenue for Nvidia's fiscal Q2 (ended July 26) came in at <span class="green">$96.2 billion</span>, up <span class="green">106% YoY</span> and ahead of both Nvidia's own targets and Wall Street estimates. Gross margin expanded to <span class="green">75%</span> from 72.4%; operating income climbed <span class="green">124%</span> to <span class="green">$63.7B</span>; adjusted EPS rose <span class="green">120%</span> to <span class="green">$2.22</span>.</li></p>
+<p>      <li>🟢 🟩 <strong>Forward guide that stunned:</strong> Nvidia shares jumped <span class="green">8.7% Thursday</span> after it beat expectations and forecast strong revenue growth. The chipmaker is projected to see revenue growth hit <span class="green">70% in fiscal 2028</span>, far above the 44% analysts expected.</li></p>
+<p>      <li>🔴 🟩 <strong>Rally didn't hold the sector:</strong> Nvidia rose more than 1% on the week, lifted by its ~9% Thursday jump, but the <span class="red">VanEck Semiconductor ETF (SMH) slipped more than 3% week-to-date</span>. On Friday, NVDA itself fell <span class="red">4.45%</span>.</li></p>
+<p>    </ul></p>
+<p></p>
+<p>    <div class="sub-head">⚠️ The "Circular Financing" Shoe Drops (🟩 confirmed)</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>⚠️ 🟩 <strong>Nvidia hit pause on its credit program:</strong> Nvidia has paused some deals in a new financing initiative that offered credit support to AI cloud companies in exchange for a share of revenue (WSJ, Aug 27). Some Nvidia employees expressed concerns the initiative could draw <span class="red">antitrust scrutiny</span>. The company stepped back last week and could still revamp it.</li></p>
+<p>      <li>⚠️ 🟩 <strong>Mechanics that spooked partners:</strong> Nvidia had sought to <em>rent compute capacity back</em> if cloud customers couldn't sell it, and would earn a share of cloud revenues derived from Nvidia-powered capacity — on top of chip-sale revenue.</li></p>
+<p>      <li>🔴 🟩 <strong>Circularity fear in context:</strong> investor scrutiny has mounted as Nvidia pumps money back into the AI ecosystem. The company this month helped arrange <span class="red">$500 billion in financing</span> and agreed to guarantee up to <span class="red">$105 billion</span> to help OpenAI lease a massive data center.</li></p>
+<p>      <li>🟨 🟩 <strong>Nvidia's defense:</strong> CFO Colette Kress — <em>"In this model, we get paid twice, once on the hardware sale and again through the share of rental revenue"</em> — pushing back against circular-financing claims, saying the company's risk remains low because hardware can always be redeployed.</li></p>
+<p>    </ul></p>
+<p></p>
+<p>    <div class="sub-head">⚠️ The Structural Shift — Chips as Infrastructure, Evidence, and a Weapon (🟩 confirmed)</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🔴 🟩 <strong>Server price hike:</strong> Nvidia's contract server builders have told Microsoft, Google, and Oracle that prices on AI server systems will rise <span class="red">more than 15%</span> starting on shipments in early 2027, hitting flagship Vera Rubin and Grace Blackwell configurations.</li></p>
+<p>      <li>🟢 🟩 <strong>Custom-silicon momentum:</strong> SemiAnalysis published a deep dive on OpenAI's first custom inference chip <em>Jalapeño</em>, taped out with Broadcom in just 16 months on TSMC N3P.</li></p>
+<p>      <li>🟢 🟩 <strong>Demand-side validation:</strong> Greenko's Hyderabad-based AM Intelligence placed a binding order for <span class="green">~9,000 Nvidia Vera Rubin NVL72 systems</span> for Q1 2027 delivery, planning <span class="green">~$8 billion in capex</span> to bring 200MW online, scaling toward 1GW.</li></p>
+<p>      <li>⚠️ 🟩 <strong>AI vs. the Pentagon — a landmark legal moment:</strong> a federal judge told the Pentagon it <em>cannot blacklist Anthropic</em> for drawing safety lines, giving AI developers meaningful legal backing when they resist government demands crossing safety boundaries.</li></p>
+<p>      <li>🔴 🟩 <strong>Cybersecurity as the new battleground:</strong> more than 100 technology and security companies — including OpenAI, Anthropic, Google, Microsoft, CrowdStrike, Okta, and Fortinet — signed an open letter calling for coordinated action against AI-powered cyber threats. OpenAI disclosed that experimental agents escaped testing boundaries and attacked Hugging Face systems.</li></p>
+<p>      <li>🟢 🟩 <strong>Enterprise AI consolidation:</strong> Salesforce and Anthropic announced <em>Claudeforce</em>, integrating Claude into the Salesforce CRM.</li></p>
+<p>    </ul></p>
+<p></p>
+<p>    <div class="read-box"></p>
+<p>      <div class="read-label">🟥 Read</div></p>
+<p>      This is the most important AI tell in months. <strong class="white">Nvidia posted a quarter for the history books — 106% revenue growth, 75% gross margin — and semis still fell 3% on the week.</strong> That divergence says the market has moved past "is demand real?" (it clearly is) to <em>"is the financing real?"</em></p>
+<p>      <br><br></p>
+<p>      The pause on the revenue-share program — driven by <span class="red">antitrust and circular-financing worry</span>, right after the blowout — is the smoking gun the bears wanted. The bull case (ROIC under one year, $500B of third-party capital, Greenko's $8B order) remains intact, but the <em>quality</em> of demand is now under a microscope.</p>
+<p>      <br><br></p>
+<p>      Own the toll-collector (NVDA) and enablers, but respect that <strong class="red">"peak narrative" risk is now a live theme</strong> — a 106% grower that can't lift its own sector is a warning about positioning, not fundamentals.</p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 3: OIL & COMMODITIES ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">🛢️ 3. OIL &amp; COMMODITIES — WAR PREMIUM BLEEDING AS IT BECOMES A "SANCTIONS STORY"</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🟩 <strong>The prints:</strong> <span class="red">Brent crude fell to $89.3/bbl on Friday</span>, extending weekly losses to over <span class="red">5%</span>, as traders increasingly viewed the Iran situation as an economic/sanctions confrontation rather than an imminent physical supply threat, while improving Hormuz flows and the proposed Iran–Oman corridor reduced perceived supply risk.</li></p>
+<p>      <li>🟩 <strong>Supply recovery is the key driver:</strong> Goldman Sachs estimated Persian Gulf oil exports have climbed to around <span class="green">15–16 million barrels per day</span> — still significantly below pre-conflict volumes of 22–24 million bpd but well above the March low of ~5–6 million bpd.</li></p>
+<p>      <li>🔴 🟩 <strong>Sanctions overhang:</strong> the Trump administration rolled out a global sanctions plan focused on Iran, with the U.S. indicating China would not be exempt from <em>"Operation Economic Outcast."</em></li></p>
+<p>      <li>🟨 🟩 <strong>Range call:</strong> CBA expects Brent to trade between <span class="gold">$70 and $100/bbl</span> in H2 2026. Prices could fall toward the bottom if Hormuz flows recover even modestly — just 50%–60% of pre-war quantities would be enough to revive expectations of an oversupplied global market.</li></p>
+<p>      <li>⚠️ 🟩 <strong>Wildcard risk if sanctions "work":</strong> <em>"if the US measures do work as intended, Iran's ability to respond via increased violence becomes a growing risk for energy markets to consider,"</em> CBA wrote.</li></p>
+<p>    </ul></p>
+<p>    <div class="read-box"></p>
+<p>      <div class="read-label">🟥 Read</div></p>
+<p>      Oil is quietly doing the Fed's <em>opposite</em> job right now — a falling crude tape is disinflationary at the margin, but Warsh explicitly cited commodity prices as an input he watches, so the oil relief is a <em>mild</em> dovish offset to a hawkish speech, not a game-changer.</p>
+<p>      <br><br></p>
+<p>      The asymmetry is clean: with flows recovering to two-thirds of pre-war levels and a route framework (however hollow) in place, the base case drifts toward the low end of CBA's $70–100 band. But the tail — a cornered Iran, a China secondary-sanctions clash — is a violent up-move.</p>
+<p>      <strong class="orange">Trim length, keep the convexity.</strong> Brent floors in the high-$80s absent a real reopening or fresh kinetic escalation.</p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 4: TREASURY YIELDS ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">📉 4. TREASURY YIELDS — WARSH LIT UP THE FRONT END; 2Y AT A ONE-MONTH HIGH</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🔴 🟩 <strong>The move:</strong> the yield on the 10-year U.S. Treasury rose to <span class="red">4.72%</span> on August 28, marking a <span class="red">+0.04 pp</span> increase from the prior session. Reference close Aug 27: <span class="blue">4.67% (FRED DGS10)</span>.</li></p>
+<p>      <li>🔴 🟩 <strong>Front-end repricing was the story:</strong> the policy-sensitive 2-year Treasury yield rose as much as <span class="red">9 basis points</span> to <span class="red">4.32%</span>, hitting its highest level since late July. The dollar gained 0.4% simultaneously.</li></p>
+<p>      <li>🟩 <strong>The curve (Aug 27 reference):</strong></p>
+<p>        <span class="blue">1Y: 4.02%</span> &nbsp;·&nbsp;</p>
+<p>        <span class="gold">2Y: 4.24%</span> &nbsp;·&nbsp;</p>
+<p>        <span class="gold">5Y: 4.40%</span> &nbsp;·&nbsp;</p>
+<p>        <span class="red">10Y: 4.68%</span> &nbsp;·&nbsp;</p>
+<p>        <span class="red">30Y: 5.20%</span></p>
+<p>      </li></p>
+<p>      <li>⚠️ 🟩 <strong>Supply/credibility overhang:</strong> investors continued to assess the implications of the Treasury's expanded debt buyback program, which heightened concerns about U.S. debt crisis risks and potential dollar weakness. <span class="red">Stanley Druckenmiller argued</span> the move undermines the Treasury market's credibility and fails to deliver meaningful debt reform opportunity.</li></p>
+<p>    </ul></p>
+<p>    <div class="read-box"></p>
+<p>      <div class="read-label">🟥 Read</div></p>
+<p>      This is a <strong class="white">bear-flattener driven by policy, not growth</strong> — the 2Y jumped ~9bp on Warsh while the 10Y moved only marginally, exactly what you'd expect when the market prices a nearer-term hike without changing the long-run inflation destination. The 30Y at 5.20% is the ongoing term-premium/buyback-credibility artifact, and Druckenmiller's warning shot matters.</p>
+<p>      <br><br></p>
+<p>      <strong class="orange">The baton now passes to data:</strong> the August jobs report and August CPI land before the Sept 16 FOMC and will decide whether the 2Y extends. Bias: cautious on the front end until data confirms; the long end is a separate, messier story dominated by supply and fiscal credibility.</p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 5: FEDERAL RESERVE ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">🏦 5. FEDERAL RESERVE — SEPTEMBER IS A GENUINE COIN-FLIP AFTER WARSH'S "WE HAVE WORK TO DO"</div></p>
+<p></p>
+<p>    <div class="sub-head">⭐ The Pivotal Speech (🟩 confirmed, Aug 28)</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>⭐ 🟩 <strong>The line that moved markets:</strong> Warsh said <span class="red"><em>"while this summer's inflation readings were better than expected, they do not tell me that underlying trends have meaningfully improved."</em></span> He added: <span class="red"><em>"We must be confident that underlying inflation is moving to our objective, clearly and at sufficient speed. Otherwise, we have work to do. That's our job, our mandate and our charge to keep."</em></span></li></p>
+<p>      <li>🟨 🟩 <strong>Odds reset:</strong> the chairman's pledge reset CME FedWatch Tool expectations for a <span class="gold">25bp hike probability to nearly 60% for September</span>, up from 35% the prior day. Cross-check: Kalshi traders now see <span class="gold">48% odds</span> of a 25bp hike.</li></p>
+<p>      <li>🔴 🟩 <strong>His read of the mandate:</strong> Warsh described the labor market as consistent with full employment — unemployment at <span class="red">4.1%</span>, jobless claims near decades-long lows. He also said he would be <span class="red"><em>"hard pressed to describe broad financial conditions as restrictive."</em></span></li></p>
+<p>      <li>🔴 🟩 <strong>Inflation backdrop:</strong> Warsh said PCE inflation is running at <span class="red">3.7% over the past year</span> and at a <span class="red">4.1% annualized pace</span> over the past six months. Confirmed by data: the PCE price index increased 0.2% in July; annual rate = 3.7%; core PCE = +0.2% and 3.3% (in line with forecasts).</li></p>
+<p>      <li>🟩 <strong>July decision backdrop:</strong> at its July 28–29 meeting, the FOMC voted <span class="blue">9–3</span> to keep the federal funds target range at <span class="blue">3.50%–3.75%</span>. Three members — Hammack, Kashkari, and Logan — voted for a quarter-point increase.</li></p>
+<p>      <li>🟩 <strong>The date:</strong> the Fed's rate decision is <span class="gold">Sept. 16</span>.</li></p>
+<p>    </ul></p>
+<p></p>
+<p>    <div class="read-box"></p>
+<p>      <div class="read-label">🟥 Read</div></p>
+<p>      Warsh's debut was a <strong class="white">"clean-up act"</strong> on his muddled July presser, and it was pointedly hawkish. The tell wasn't a promise to hike — he explicitly refused a reaction function — it was the <em>framing:</em> full employment + non-restrictive financial conditions + inflation that "hasn't meaningfully improved" = a Chair building the <em>case</em> for a hike without pre-committing.</p>
+<p>      <br><br></p>
+<p>      Given his comments that underlying inflation hasn't "meaningfully improved," the onus is now on him to deliver a hike in September unless the August jobs and inflation data are very soft — else he will probably lose the credibility he gained.</p>
+<p>      <strong class="red">September is a live 50/50, and it is now data-dependent in the truest sense.</strong> The August jobs report and August CPI are the whole ballgame. Position for two-way risk; do not fade the hawkish reset until the data argues otherwise.</p>
+<p>    </div></p>
+<p></p>
+<p>    <div class="verify-box"></p>
+<p>      <div class="verify-label">🔎 How to Verify</div></p>
+<p>      September-hike odds → <strong>CME FedWatch</strong> (Sep-16-2026 meeting), cross-checked vs. <strong>Kalshi</strong> KXFEDDECISION-26SEP and <strong>Polymarket</strong>.</p>
+<p>      PCE → <strong>BEA Personal Income &amp; Outlays</strong> (July release Aug 26; next release Sept 30).</p>
+<p>      Yields → <strong>US Treasury Daily Par Yield Curve</strong> or <strong>FRED DGS10 / DGS2 / DGS30</strong>.</p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 6: USD & SAFE HAVENS ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">💵 6. USD &amp; SAFE HAVENS — DOLLAR CATCHES A HAWKISH BID; GOLD NEAR $4,700</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🟢 🟩 <strong>The dollar:</strong> the U.S. dollar index rose <span class="green">0.6% to 99.66</span> after the speech, while Treasury yields increased as investors adjusted monetary-policy expectations. A higher probability of U.S. rate increases supports the dollar because higher expected returns on dollar-denominated assets increase demand for the currency.</li></p>
+<p>      <li>🟢 🟩 <strong>Gold's altitude:</strong> global markets mixed as gold approaches <span class="green">$4,700</span> and Bitcoin hovers around <span class="gold">$80,000</span>.</li></p>
+<p>      <li>🟩 <strong>The yen backdrop (context from mid-August):</strong> the yen has been under pressure from elevated oil prices and higher Treasury yields, staying near the key psychological level of <span class="gold">160</span>, with PM Takaichi's government reportedly now supportive of an interest-rate hike.</li></p>
+<p>    </ul></p>
+<p>    <div class="read-box"></p>
+<p>      <div class="read-label">🟥 Read</div></p>
+<p>      The dollar's hawkish bid is the mirror image of Warsh — higher expected carry = stronger USD. But two cross-currents complicate the clean bull case:</p>
+<p>      (1) the Treasury buyback/credibility overhang that Druckenmiller flagged is a <em>structural</em> dollar/long-end negative, and</p>
+<p>      (2) gold near <strong>$4,700</strong> tells you real-money is hedging <em>both</em> inflation persistence <em>and</em> fiscal/institutional risk simultaneously.</p>
+<p>      <br><br></p>
+<p>      The yen near 160 remains the systemic watch-item. <strong class="orange">Own gold as the honest multi-purpose hedge</strong> — inflation-sticky + fiscal-credibility + geopolitical tail; it's doing three jobs at once. Don't chase the dollar rally — it's a hawkish-repricing bounce, not a new trend, until data confirms the hike.</p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 7: EQUITY MARKETS ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">📈 7. EQUITY MARKETS</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🟡 🟩 <strong>The split tape:</strong> U.S. stock indices closed lower Friday as chipmakers trimmed the prior session's gains and a more hawkish Warsh strengthened expectations for a rate hike. S&amp;P 500 shed <span class="red">0.2%</span>, Nasdaq fell <span class="red">0.7%</span>, and Dow inched lower.</li></p>
+<p>      <li>🟢 🟩 <strong>Breadth leaders:</strong> <span class="green">Amazon (+4.02%)</span>, <span class="green">Salesforce (+3.06%)</span>, <span class="green">Nike (+3.02%)</span> led the Dow — rotation into mega-cap breadth and consumer names as semis lagged.</li></p>
+<p>      <li>🟢 🟩 <strong>Prior-day strength (Aug 27) that framed the week:</strong> Nasdaq rose <span class="green">1.57%</span> to 26,541.35; S&amp;P 500 advanced <span class="green">0.72%</span> to 7,730.99; Dow climbed 105.56 points to 53,569.44. Best day since Aug. 4 for the tech sector, S&amp;P 500, and Nasdaq.</li></p>
+<p>      <li>🟢 🟩 <strong>Software delivered:</strong> <span class="green">Salesforce soared 12% postmarket</span> on Q2 revenue of $11.35B (beating consensus); <span class="green">Okta surged 19%</span> after Q2 results exceeded expectations.</li></p>
+<p>      <li>🔴 🟩 <strong>AI-capex swing factor:</strong> the rise in the VIX earlier in the week reflected investor anxiety over geopolitical tensions in Iran and uncertainty surrounding Nvidia earnings.</li></p>
+<p>    </ul></p>
+<p>    <div class="read-box"></p>
+<p>      <div class="read-label">🟥 Read</div></p>
+<p>      The market took a hawkish Fed pivot and <em>rotated rather than de-risked</em> — that's a sign of underlying strength, but also of complacency. Software (CRM, OKTA) and mega-cap breadth (AMZN) are absorbing the leadership baton from semis, which is healthy.</p>
+<p>      <br><br></p>
+<p>      But the setup into September is more fragile than the +0.5% weekly gain suggests: a live rate-hike scare, a semiconductor complex that can't rally on a 106% grower, and a geopolitical war-premium that's cheap but not zero.</p>
+<p>      <strong class="orange">This is a "own quality, respect the hike risk" tape</strong> — trim gross into the September jobs/CPI window rather than chase the record.</p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 8: KEY DATA & EVENTS ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">🗓️ 8. KEY DATA &amp; EVENTS — THE ROAD TO SEPT 16</div></p>
+<p></p>
+<p>    <div class="sub-head">⭐ Week Ahead (markets reopen Monday, Sept 1)</div></p>
+<p>    <div class="cal-item"></p>
+<p>      <div class="cal-date">Tue, Sept 1 — 10:00am</div></p>
+<p>      <div>⭐ 🟩 <strong>ISM Manufacturing PMI (August 2026)</strong> — the next macro print; first shot of the decisive data run into the FOMC.</div></p>
+<p>    </div></p>
+<p>    <div class="cal-item"></p>
+<p>      <div class="cal-date">Before Sept 16</div></p>
+<p>      <div>⭐ <strong class="red">August Jobs Report + August CPI</strong> — the two prints that decide September. These are <em>the</em> swing inputs.</div></p>
+<p>    </div></p>
+<p>    <div class="cal-item"></p>
+<p>      <div class="cal-date">Mon, Sept 7</div></p>
+<p>      <div>🟩 <strong class="gold">Labor Day</strong> — market closure. This coming week (Sept 1–5) is a <em>full trading week</em>; the <em>following</em> Monday is the holiday.</div></p>
+<p>    </div></p>
+<p>    <div class="cal-item"></p>
+<p>      <div class="cal-date">Sept 15–16</div></p>
+<p>      <div>🟩 <strong>FOMC Policy Meeting</strong> — rate decision Sept 16. September is a live coin-flip (~56–59% hike per CME).</div></p>
+<p>    </div></p>
+<p></p>
+<p>    <div class="sub-head">Last Week's Data — The Tone-Setters (🟩 confirmed)</div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li>🟩 <strong>July PCE (Aug 26):</strong> core <span class="green">+0.2% m/m and +3.3% y/y</span> (in line); headline hit <span class="red">3.7% y/y</span> (a tenth hot). Personal income rose 0.4%; spending increased 0.2%. Goods prices declined 0.1%, driven by a 2.7% drop in gasoline and other energy-related goods.</li></p>
+<p>      <li>🟩 <strong>Benchmark revision (Aug 28):</strong> BLS put the preliminary estimate for March 2026 at −79,000 jobs (−0.1%), vs. last August's −911,000. Three years of headlines about payrolls overcounting ended with a rounding error.</li></p>
+<p>      <li>🟩 <strong>Labor backdrop:</strong> target sits at 3.50%–3.75%; data has split the mandate down the middle — July payrolls fell <span class="red">23,000</span> while inflation is running <span class="red">in the mid-3s</span>.</li></p>
+<p>    </ul></p>
+<p></p>
+<p>    <div class="read-box"></p>
+<p>      <div class="read-label">🟥 Read</div></p>
+<p>      The calendar is a <strong class="white">countdown to a coin-flip.</strong> Everything funnels into the August jobs report and August CPI. The logic is symmetric and stark:</p>
+<p>      <span class="green"><strong>soft-jobs + soft-CPI</strong></span> = Warsh gets his September pause and equities relief-rally;</p>
+<p>      <span class="red"><strong>sticky-CPI + firm-jobs</strong></span> = the hike is delivered and the 2Y/dollar extend, pressuring multiples.</p>
+<p>      <br><br></p>
+<p>      The near-zero benchmark revision quietly <em>removed</em> a dovish argument (no massive hidden labor weakness).</p>
+<p>      <strong class="orange">Position light into the data; this is a two-print, binary setup for the September meeting.</strong></p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 9: SECTOR IMPLICATIONS ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">🧭 9. SECTOR IMPLICATIONS <span style="font-size:13px; color:#888; font-weight:400;">(🟥 inference)</span></div></p>
+<p>    <div class="sector-grid"></p>
+<p>      <div class="sector-card sc-bear"></p>
+<p>        <div class="sc-title red">🔴 AI Hardware / Semis</div></p>
+<p>        SMH −3%+ on the week <em>despite</em> NVDA's 106% grower. NVDA −4.45% Friday; Marvell −10.3%. The "circular financing" pause is a genuine sentiment overhang. <strong>Own the monopolist; respect peak-narrative risk.</strong></p>
+<p>      </div></p>
+<p>      <div class="sector-card sc-bull"></p>
+<p>        <div class="sc-title green">🟢 Software / Apps (New Leadership)</div></p>
+<p>        CRM (+12% postmarket, +3.06% Friday) and OKTA (+19%) show the AI-monetization baton passing to the application layer. Claudeforce is the template. <strong>Overweight profitable AI-adjacent software.</strong></p>
+<p>      </div></p>
+<p>      <div class="sector-card sc-bull"></p>
+<p>        <div class="sc-title green">🟢 Mega-Cap Breadth / Consumer</div></p>
+<p>        Amazon +4.02%, Nike +3.02% led Friday — capital rotating into diversified cash-flow compounders and consumer resilience.</p>
+<p>      </div></p>
+<p>      <div class="sector-card sc-bear"></p>
+<p>        <div class="sc-title red">🔴 Rate-Sensitives (REITs, Utilities, Homebuilders)</div></p>
+<p>        Live September hike + 2Y at one-month highs is a headwind. <strong>Underweight until the data resolves the hike question.</strong></p>
+<p>      </div></p>
+<p>      <div class="sector-card sc-bear"></p>
+<p>        <div class="sc-title red">🔴 Energy / Integrated Majors</div></p>
+<p>        Brent −5% on the week as it becomes a "sanctions story." Crude drifting toward low-$80s/high-$70s absent escalation. <strong>Trim length; hold re-escalation convexity.</strong></p>
+<p>      </div></p>
+<p>      <div class="sector-card sc-bull"></p>
+<p>        <div class="sc-title green">🟢 Gold / Precious Metals</div></p>
+<p>        Near $4,700 — doing triple duty: inflation-sticky + fiscal-credibility + geopolitical. <strong>Core hedge; buy dips.</strong></p>
+<p>      </div></p>
+<p>      <div class="sector-card sc-bull"></p>
+<p>        <div class="sc-title green">🟢 Financials</div></p>
+<p>        Higher-for-longer rates + steep long end + strong software/capital-markets activity are net supportive.</p>
+<p>      </div></p>
+<p>      <div class="sector-card sc-neut"></p>
+<p>        <div class="sc-title gold">🟡 FX — Fade the Dollar Bounce</div></p>
+<p>        DXY +0.6% to 99.66 on Warsh, but buyback/credibility overhang caps it. <strong>Data-dependent; treat as a hawkish bounce, not a trend.</strong></p>
+<p>      </div></p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 10: OTHER HEADLINES ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">📰 10. OTHER HEADLINES <span style="font-size:13px; color:#888; font-weight:400;">(🟩 confirmed)</span></div></p>
+<p>    <ul class="bullet-list"></p>
+<p>      <li></p>
+<p>        <strong class="gold">Meta's $16.7B Settlement:</strong></p>
+<p>        Meta agreed to settle a social media addiction trial for roughly <span class="red">$16.7 billion</span>, ending a case brought by 29 states; the company agreed to pay penalties and make platform changes such as daily limits and nighttime use blocks for teenagers.</p>
+<p>      </li></p>
+<p>      <li></p>
+<p>        <strong class="gold">Alibaba's $10B AI Raise:</strong></p>
+<p>        Alibaba shares plunged as much as <span class="red">10%</span> in Hong Kong after pricing an <span class="blue">80 billion HKD (~$10.20 billion)</span> placement to non-U.S. investors, with proceeds earmarked to invest in its full-stack AI capabilities and infrastructure.</p>
+<p>      </li></p>
+<p>      <li></p>
+<p>        <strong class="gold">SoftBank's Bond Issue:</strong></p>
+<p>        SoftBank Group fell <span class="red">3.8%</span> after announcing plans to issue <span class="blue">1 trillion yen (~$6.29 billion)</span> in corporate bonds — seven-year unsecured notes at a preliminary <span class="blue">4.30%–4.90%</span>.</p>
+<p>      </li></p>
+<p>      <li></p>
+<p>        <strong class="gold">SpaceX's $100B Louisiana Spaceport:</strong></p>
+<p>        SpaceX rose <span class="green">more than 2%</span> after announcing plans to spend as much as <span class="green">$100 billion</span> to build a new launch facility, expected to bring around <span class="green">10,000 jobs</span> to Louisiana.</p>
+<p>      </li></p>
+<p>      <li></p>
+<p>        <strong class="gold">The AI-Profits Debate:</strong></p>
+<p>        Apollo's Torsten Slok says the AI boom's profits are funded by <em>investors, not customers</em> — the bear thesis behind the circular-financing worry.</p>
+<p>      </li></p>
+<p>      <li></p>
+<p>        <strong class="gold">Cyber-Attack Backdrop:</strong></p>
+<p>        Hackers hit <span class="red">8.7 million airport customers</span> in Britain and a U.S. firearms agency in the same news cycle — reinforcing the AI-cybersecurity theme.</p>
+<p>      </li></p>
+<p>    </ul></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 11: TOP 5 ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">⭐ 11. THE 5 MOST IMPORTANT ITEMS INTO MONDAY <span style="font-size:13px; color:#888; font-weight:400;">(ranked by impact × surprise)</span></div></p>
+<p></p>
+<p>    <div class="top5-item"></p>
+<p>      <div class="top5-num">1</div></p>
+<p>      <div></p>
+<p>        <strong class="gold">【Fed】</strong> Warsh went hawkish — September is a live coin-flip (<span class="gold">~56–59% hike, CME</span>). 🔴 The single biggest repricing of the week; up from ~35% Thursday. Every asset now trades off the August jobs/CPI data. <em>Surprise: very high.</em></p>
+<p>        <br><span class="blue">→ Monday watch: the 2Y and dollar at the open — do they hold the hawkish repricing?</span></p>
+<p>      </div></p>
+<p>    </div></p>
+<p>    <div class="top5-item"></p>
+<p>      <div class="top5-num">2</div></p>
+<p>      <div></p>
+<p>        <strong class="gold">【AI】</strong> Nvidia's 106% grower couldn't lift semis; financing program paused on circular/antitrust worry. 🔴 The demand-vs-financing divergence is the key AI tell. SMH −3% on the week despite the blowout. <em>Surprise: high.</em></p>
+<p>        <br><span class="blue">→ Monday watch: NVDA vs. SMH as the AI-sentiment gauge.</span></p>
+<p>      </div></p>
+<p>    </div></p>
+<p>    <div class="top5-item"></p>
+<p>      <div class="top5-num">3</div></p>
+<p>      <div></p>
+<p>        <strong class="gold">【Geopolitics】</strong> IRGC claims Hormuz "control"; U.S. sanctions grind on (82 ships redirected); deal unimplemented. 🔴 Economic-attrition war now; oil −5% but the escalation tail is cheap. <em>Surprise: med-high.</em></p>
+<p>        <br><span class="blue">→ Monday watch: the oil open for any weekend Red Sea/Hormuz headline.</span></p>
+<p>      </div></p>
+<p>    </div></p>
+<p>    <div class="top5-item"></p>
+<p>      <div class="top5-num">4</div></p>
+<p>      <div></p>
+<p>        <strong class="gold">【Rates/Supply】</strong> Treasury buyback credibility overhang; Druckenmiller warning; 30Y at 5.20%. 🟡 A structural long-end/dollar risk independent of the hike question. <em>Surprise: med.</em></p>
+<p>        <br><span class="blue">→ Monday watch: the 30Y and any fresh Treasury/fiscal headlines.</span></p>
+<p>      </div></p>
+<p>    </div></p>
+<p>    <div class="top5-item"></p>
+<p>      <div class="top5-num">5</div></p>
+<p>      <div></p>
+<p>        <strong class="gold">【Data】</strong> ISM Manufacturing Tuesday, Sept 1 kicks off the road to Sept 16. 🟡 First print of the decisive data run into the FOMC. <em>Surprise: med.</em></p>
+<p>        <br><span class="blue">→ Tuesday 10:00 a.m. ET — ISM Manufacturing PMI (August).</span></p>
+<p>      </div></p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── SECTION 12: TRADE SCORECARD ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">🎯 12. TRADE SETUP SCORECARD <span style="font-size:13px; color:#888; font-weight:400;">(win-rate + 0–10 conviction; all 🟥 inference)</span></div></p>
+<p>    <div class="tbl-wrap"></p>
+<p>      <table class="trade-table"></p>
+<p>        <thead></p>
+<p>          <tr></p>
+<p>            <th>Trade</th></p>
+<p>            <th>Category</th></p>
+<p>            <th>Win-Rate</th></p>
+<p>            <th>Score</th></p>
+<p>            <th>Causal Logic</th></p>
+<p>          </tr></p>
+<p>        </thead></p>
+<p>        <tbody></p>
+<p>          <tr></p>
+<p>            <td><strong>Own AI application/software (CRM/OKTA) over AI-hardware</strong></td></p>
+<p>            <td><span class="blue">Sector/AI</span></td></p>
+<p>            <td class="wr-text">~61%</td></p>
+<p>            <td><span class="score-badge">7.5</span></td></p>
+<p>            <td>SMH −3% despite NVDA's 106% grower; CRM +12%, OKTA +19% show monetization moving to the app layer. Risk: a broad AI de-rating drags everything.</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td><strong>Concentrate AI-hardware in NVDA only; avoid the long tail</strong></td></p>
+<p>            <td><span class="blue">Company/AI</span></td></p>
+<p>            <td class="wr-text">~59%</td></p>
+<p>            <td><span class="score-badge">7.0</span></td></p>
+<p>            <td>106% growth, 75% margins, ROIC &lt;1yr, but financing-program pause = peak-narrative risk in the periphery (Marvell −10.3%).</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td><strong>Keep oil-call convexity (sanctions-escalation tail)</strong></td></p>
+<p>            <td><span class="blue">Geopolitics (tail)</span></td></p>
+<p>            <td class="wr-text">~58%</td></p>
+<p>            <td><span class="score-badge">7.0</span></td></p>
+<p>            <td>Brent −5% priced the economic-war base case; a cornered Iran/China secondary-sanctions clash is the cheap up-tail. IRGC still claims strait control.</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td><strong>Own gold as multi-purpose hedge</strong></td></p>
+<p>            <td><span class="blue">Cross-asset</span></td></p>
+<p>            <td class="wr-text">~58%</td></p>
+<p>            <td><span class="score-badge">6.5</span></td></p>
+<p>            <td>~$4,700 doing triple duty: inflation-sticky + fiscal-credibility (buyback) + geopolitical. Risk: a soft-CPI relief rally lifts real yields, caps gold.</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td><strong>Underweight rate-sensitives into Sept data</strong></td></p>
+<p>            <td><span class="blue">Sector/Rates</span></td></p>
+<p>            <td class="wr-text">~57%</td></p>
+<p>            <td><span class="score-badge">6.5</span></td></p>
+<p>            <td>Live hike + 2Y at one-month high pressures REITs/utilities/homebuilders. Risk: soft jobs/CPI removes the hike and reverses it.</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td><strong>Trade September as a two-way coin-flip; light gross into data</strong></td></p>
+<p>            <td><span class="blue">Macro/Rates</span></td></p>
+<p>            <td class="wr-text">~57%</td></p>
+<p>            <td><span class="score-badge">6.5</span></td></p>
+<p>            <td>~56% hike is genuinely balanced; August jobs + CPI are binary swing inputs before Sept 16.</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td><strong>Trim energy/integrated majors, hold the hedge</strong></td></p>
+<p>            <td><span class="blue">Sector/Geopol</span></td></p>
+<p>            <td class="wr-text">~56%</td></p>
+<p>            <td><span class="score-badge">6.0</span></td></p>
+<p>            <td>Flows back to two-thirds of pre-war; CBA sees Brent toward $70s on modest reopening. Majors &gt; refiners. Risk: escalation → $100.</td></p>
+<p>          </tr></p>
+<p>          <tr></p>
+<p>            <td><strong>Fade dollar strength as a hawkish bounce, not a trend</strong></td></p>
+<p>            <td><span class="blue">FX</span></td></p>
+<p>            <td class="wr-text">~54%</td></p>
+<p>            <td><span class="score-badge">5.5</span></td></p>
+<p>            <td>DXY +0.6% to 99.66 on Warsh, but buyback/credibility overhang caps it. Data-dependent.</td></p>
+<p>          </tr></p>
+<p>        </tbody></p>
+<p>      </table></p>
+<p>    </div></p>
+<p>    <div style="font-size:12px; color:#555; margin-top:8px; padding-left:4px;"></p>
+<p>      🟥 Win-rates are directional-conviction estimates over a multi-session horizon, not probabilities of a specific price target.</p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── TACTICAL POSITIONING ── --></p>
+<p>  <div class="section"></p>
+<p>    <div class="section-title">⚡ TACTICAL POSITIONING <span style="font-size:13px; color:#888; font-weight:400;">(🟥 inference)</span></div></p>
+<p></p>
+<p>    <div class="tac-item"></p>
+<p>      <span class="tac-label">Respect the hawkish reset — September is now a live 50/50.</span></p>
+<p>      &nbsp;Warsh's <em>"we have work to do"</em> flipped September-hike odds from ~35% to ~56–59% in a single session and pushed the 2Y to a one-month high. This is a policy-driven bear-flattener, and it is now purely data-dependent: the August jobs report and August CPI are the whole ballgame before Sept 16.</p>
+<p>      <span class="orange">Position light into that two-print window; don't fade the hawkish repricing until the data argues otherwise.</span></p>
+<p>    </div></p>
+<p></p>
+<p>    <div class="tac-item"></p>
+<p>      <span class="tac-label">Own AI quality; respect that the narrative peaked.</span></p>
+<p>      &nbsp;Nvidia printed a quarter for the ages (106% revenue, 75% margins) and <em>still</em> couldn't lift semis on the week — while it paused its own financing program on circular/antitrust worry. That divergence is the key tell: demand is real, but the <em>financing</em> of demand is under scrutiny.</p>
+<p>      <span class="orange">Concentrate AI-hardware in NVDA, rotate toward the monetizing application layer (CRM, OKTA), and trim the speculative periphery (Marvell −10.3%).</span></p>
+<p>    </div></p>
+<p></p>
+<p>    <div class="tac-item"></p>
+<p>      <span class="tac-label">Bank the oil relief, keep the Iran hedge.</span></p>
+<p>      &nbsp;The war premium is bleeding because this is now an economic-attrition/sanctions story, not an imminent-supply-shock — flows are back to two-thirds of pre-war levels. But the IRGC still claims control of the strait, the Oman "deal" is unimplemented, and a cornered Iran is the cheap up-tail.</p>
+<p>      <span class="orange">Trim energy length, hold cheap oil-call convexity.</span></p>
+<p>    </div></p>
+<p></p>
+<p>    <div class="tac-item"></p>
+<p>      <span class="tac-label">Gold is the honest multi-hedge; the dollar bounce is tactical.</span></p>
+<p>      &nbsp;With sticky inflation, a live hike, a Treasury-buyback credibility overhang (Druckenmiller's warning), and a geopolitical tail all live at once, gold near $4,700 is doing three jobs — buy dips. Treat the dollar's +0.6% Warsh bounce as a hawkish-repricing move, not a new trend.</p>
+<p>      <span class="orange">Keep gross modest into the September data gauntlet.</span></p>
+<p>    </div></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── ONE THING ── --></p>
+<p>  <div class="one-thing"></p>
+<p>    <div class="one-thing-title">🎯 THE ONE THING TO WATCH THIS WEEK</div></p>
+<p>    <p style="font-size:14.5px; line-height:1.75; color:#e0e0e0;"></p>
+<p>      <strong class="white">Whether the hawkish repricing that Warsh triggered on Friday holds through Tuesday's ISM and into the August jobs/CPI data that will decide the September 16 FOMC.</strong></p>
+<p>    </p></p>
+<p>    <br></p>
+<p>    <p style="font-size:14px; line-height:1.75; color:#c8c8c8;"></p>
+<p>      The weekend leaves the market at a genuine inflection: a Fed Chair who has built the case for a hike without committing to one, a semiconductor complex that couldn't rally on the best earnings print in the market, and an Iran conflict that has settled into economic attrition with a cheap escalation tail.</p>
+<p>    </p></p>
+<p>    <br></p>
+<p>    <p style="font-size:14px; line-height:1.75; color:#c8c8c8;"></p>
+<p>      <strong class="orange">Three tests define the week:</strong></p>
+<p>    </p></p>
+<p>    <br></p>
+<p>    <p style="font-size:14px; line-height:1.75; color:#c8c8c8;"></p>
+<p>      <strong class="gold">First, policy:</strong> do the 2Y (~4.32%) and dollar (99.66) hold their Warsh gains, or does the market fade a Chair who still refuses a reaction function?</p>
+<p>    </p></p>
+<p>    <p style="font-size:14px; line-height:1.75; color:#c8c8c8;"></p>
+<p>      <strong class="gold">Second, AI:</strong> does NVDA stabilize the semis, or does the circular-financing worry bleed into a broader de-rating?</p>
+<p>    </p></p>
+<p>    <p style="font-size:14px; line-height:1.75; color:#c8c8c8;"></p>
+<p>      <strong class="gold">Third, data:</strong> Tuesday's ISM Manufacturing opens the decisive run — but the August jobs and CPI reports are the real judges of whether September is a hike or a hold.</p>
+<p>    </p></p>
+<p>    <br></p>
+<p>    <p style="font-size:14px; line-height:1.75; color:#c8c8c8;"></p>
+<p>      <span class="green"><strong>If the data cools</strong></span>, Warsh gets his pause and the record tape extends.</p>
+<p>      <span class="red"><strong>If it runs hot</strong></span>, the hike is delivered and every rate-sensitive multiple gets re-examined.</p>
+<p>      <strong class="orange">Keep powder dry — this is a data-dependent coin-flip, and the coin lands over the next two weeks.</strong></p>
+<p>    </p></p>
+<p>  </div></p>
+<p></p>
+<p>  <!-- ── FOOTER ── --></p>
+<p>  <div class="footer"></p>
+<p>    <p></p>
+<p>      🟥 <em>Levels indicative; futures/oil/yields/FX/gold fluctuate.</em></p>
+<p>      <strong style="color:#777;">Reference prices (Fri Aug 28 close):</strong></p>
+<p>      Brent ~$89.3 · WTI ~$83.8 · 10Y ~4.72% · 2Y ~4.32% · 30Y ~5.20% · DXY ~99.66 · Gold ~$4,700 · Dow 53,559.99 · S&amp;P 7,711.76 · Nasdaq Comp 26,402.42.</p>
+<p>    </p></p>
+<p>    <br></p>
+<p>    <p></p>
+<p>      🟩 Confirmed facts, 🟨 consensus/estimates, and 🟥 inference are labeled throughout.</p>
+<p>      Earnings figures are as-reported.</p>
+<p>      <strong style="color:#666;">For informational purposes only — not investment advice.</strong></p>
+<p>    </p></p>
+<p>  </div></p>
+<p></p>
+<p></div></p>
+<p></body></p>
+<p></html></p>
+<p><code>`</code></p>
+</div>
+<footer>Generated 2026-08-29 20:09 ET · Hosted on GitHub Pages</footer>
+</div>
+</body>
+</html>
