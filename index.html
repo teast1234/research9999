@@ -27,6 +27,9 @@ header p { color: #6b7fa3; font-size: 1.05em; }
 .badge.combined { background: #1a2a3a; color: #60a5fa; }
 .badge.notes { background: #2d1f3a; color: #d8b4fe; }
 .badge.geo { background: #3a2a10; color: #ffd166; }
+.badge.dash { background: #0f2f2a; color: #34d399; }
+.card.dash { border-color: #1b3a32; }
+.card.dash:hover { border-color: #34d399; background: #10241f; }
 .empty { text-align: center; color: #4a5568; padding: 80px 0; }
 .empty h2 { font-size: 1.3em; margin-bottom: 12px; color: #6b7fa3; }
 footer { margin-top: 64px; text-align: center; color: #4a5568; font-size: 0.8em; }
@@ -40,13 +43,21 @@ footer { margin-top: 64px; text-align: center; color: #4a5568; font-size: 0.8em;
 <div class="container">
 <header>
 <h1>美股盤前研究</h1>
-<p>AI 模型每日盤前新聞彙整 · 開盤前最重要交易資訊</p>
+<p>AI 模型每日盤前新聞彙整 · Morning Notes · 地緣交易總表 · 儀表板</p>
 </header>
 <div class="stats">
 <div class="stat"><div class="stat-num">30</div><div class="stat-label">交易日</div></div>
 <div class="stat"><div class="stat-num">60</div><div class="stat-label">報告</div></div>
+<div class="stat"><div class="stat-num">1</div><div class="stat-label">儀表板</div></div>
 </div>
-<div class="date-group"><div class="date-header">📅 2026-09-08 (Tuesday)</div><div class="card-grid">
+<div class="date-group"><div class="date-header">📊 儀表板 Dashboards</div><div class="card-grid">
+<a class="card dash" href="pages/stock_returns_dashboard.html">
+  <div class="card-title">IB 股票收益概览 <span class="badge dash">Dashboard</span></div>
+  <div class="card-meta">
+    <span class="model">靜態頁面</span>
+    <span class="pushed">上傳於 2026-09-08 15:41 北京时间</span>
+  </div>
+</a></div></div><div class="date-group"><div class="date-header">📅 2026-09-08 (Tuesday)</div><div class="card-grid">
 <a class="card" href="reports/080926/morningnotes_20260909_0032ET.html">
   <div class="card-title">Morning Notes（彩色版） <span class="badge notes">Notes</span></div>
   <div class="card-meta">
@@ -527,7 +538,7 @@ footer { margin-top: 64px; text-align: center; color: #4a5568; font-size: 0.8em;
     <span class="generated">生成 2026-08-05 17:21 北京时间</span>
   </div>
 </a></div></div>
-<footer>Last updated 2026-09-09 12:37 北京时间 · Powered by Poe API · Hosted on GitHub Pages</footer>
+<footer>Last updated 2026-09-09 12:40 北京时间 · Powered by Poe API · Hosted on GitHub Pages</footer>
 </div>
 </body>
 </html>
