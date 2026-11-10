@@ -10,6 +10,7 @@ build/
 *.spec
 .env
 .poe_key_rr
+.poe_key_dead
 
 # 本地代碼不進公開倉庫(GitHub 只託管靜態頁面)
 *.py
