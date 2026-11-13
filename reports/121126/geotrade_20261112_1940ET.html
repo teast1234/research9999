@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="report-type" content="geotrade">
+<meta name="report-model" content="Claude-Opus-4.8">
+<meta name="report-generated" content="2026-11-12 19:40:48 EST">
+<title>2026-11-12 地緣×宏觀整合簡報：利率主軸壓過地緣，油價地緣溢價與增產拉鋸</title>
+<style>
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "PingFang TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  background: #0f1419; color: #e6e6e6; line-height: 1.65; padding: 16px;
+}
+.wrap { max-width: 1320px; margin: 0 auto; }
+nav { margin-bottom: 14px; }
+nav a { color: #7fdbff; text-decoration: none; font-size: 0.9rem; }
+nav a:hover { text-decoration: underline; }
+h1 { font-size: 1.35rem; color: #ffd166; border-left: 5px solid #ffd166; padding-left: 12px; margin-bottom: 6px; }
+.subtitle { color: #9aa5b1; font-size: 0.85rem; margin-bottom: 8px; padding-left: 17px; }
+.stamp { color:#7fdbff; font-size:0.8rem; padding-left:17px; margin-bottom:14px; }
+.core { background:#1a2029; border-left:4px solid #ffd166; padding:12px 14px; font-size:0.9rem; color:#dfe6e9; margin:0 0 28px 0; }
+h2 { font-size: 1.1rem; margin: 28px 0 4px; padding: 10px 14px; border-radius: 8px 8px 0 0; }
+.s-attack { background: linear-gradient(90deg,#c0392b,#7d241a); color:#fff; }
+.s-defense { background: linear-gradient(90deg,#2471a3,#154360); color:#fff; }
+.s-both { background: linear-gradient(90deg,#1e8449,#145a32); color:#fff; }
+.s-strat { background: linear-gradient(90deg,#8e44ad,#4a235a); color:#fff; }
+.s-tools { background: linear-gradient(90deg,#1f618d,#154360); color:#fff; }
+.s-item-action { background: linear-gradient(90deg,#922b21,#641e16); color:#fff; }
+.s-item-watch { background: linear-gradient(90deg,#b9770e,#7e5103); color:#fff; }
+.s-item-tail { background: linear-gradient(90deg,#5d6d7e,#34495e); color:#fff; }
+.item-wrap { margin-bottom: 36px; border: 1px solid #2c333d; border-radius: 10px; padding: 0 0 12px; background:#12171e; }
+.item-wrap > h2 { margin: 0 0 0; border-radius: 9px 9px 0 0; }
+.item-body { padding: 12px 12px 4px; }
+.logic { background:#1a2029; border-left:4px solid #ffd166; padding:10px 14px; font-size:0.85rem; color:#c8cdd4; margin-bottom:10px; }
+.grid4 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:14px; }
+@media (max-width: 900px) { .grid4 { grid-template-columns:1fr; } }
+.box { background:#1a2029; border:1px solid #2c333d; border-radius:8px; padding:10px 12px; }
+.box h3 { font-size:0.82rem; color:#ffd166; margin-bottom:6px; letter-spacing:0.04em; }
+.box p { font-size:0.84rem; color:#c8cdd4; }
+.table-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; border-radius:0 0 8px 8px; margin-bottom:12px; }
+table { width:100%; border-collapse:collapse; min-width:1000px; background:#161b22; }
+th, td { border:1px solid #2c333d; padding:9px 11px; text-align:left; vertical-align:top; font-size:0.83rem; }
+th { background:#20262f; color:#ffd166; font-weight:600; white-space:nowrap; }
+td:first-child { font-weight:600; color:#fff; }
+.dir-short { color:#e74c3c; font-weight:700; }
+.dir-long { color:#2ecc71; font-weight:700; }
+.price { color:#7fdbff; font-weight:700; white-space:nowrap; }
+.lvl { line-height:1.9; }
+.lvl .lim { color:#f1c40f; font-weight:600; }
+.lvl .sl { color:#e74c3c; font-weight:600; }
+.lvl .tp { color:#2ecc71; font-weight:600; }
+.tag { display:inline-block; width:38px; font-size:0.72rem; color:#9aa5b1; }
+.tier { display:inline-block; font-size:0.7rem; padding:2px 7px; border-radius:10px; font-weight:600; margin-top:6px; }
+.t1 { background:#c0392b; color:#fff; }
+.t2 { background:#d68910; color:#fff; }
+.na { color:#9aa5b1; font-style:italic; }
+.warn { background:#3d2c00; color:#ffd166; padding:1px 5px; border-radius:4px; font-size:0.75rem; }
+.logic-cell b { color:#ffd166; }
+.logic-cell .var { color:#7fdbff; font-weight:600; }
+.logic-cell .risk { color:#e74c3c; font-weight:600; }
+.mech { display:block; margin-top:6px; padding-top:5px; border-top:1px dotted #2c333d; }
+.mech-label { color:#9aa5b1; font-size:0.75rem; font-weight:600; }
+.summary { margin-top:30px; background:linear-gradient(135deg,#1a2029,#0f1419); border:2px solid #ffd166; border-radius:10px; padding:18px; }
+.summary h2 { background:none; color:#ffd166; padding:0; margin:0 0 10px; font-size:1.15rem; }
+.summary blockquote { border-left:4px solid #2ecc71; padding-left:14px; margin:8px 0; color:#dfe6e9; font-size:0.9rem; }
+.tradebook { margin-top:28px; border:2px solid #34d399; border-radius:10px; padding:0 0 12px; background:#101820; }
+.tradebook > h2 { margin:0; border-radius:8px 8px 0 0; background:linear-gradient(90deg,#0f766e,#115e59); color:#fff; }
+.disc { margin-top:16px; font-size:0.8rem; color:#9aa5b1; padding:12px; background:#161b22; border-radius:8px; border:1px dashed #2c333d; }
+code { background:#2c333d; padding:1px 5px; border-radius:4px; color:#7fdbff; font-size:0.8rem; }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="../../index.html">← 返回首頁</a></nav>
+<h1>2026-11-12 地緣×宏觀整合簡報：利率主軸壓過地緣，油價地緣溢價與增產拉鋸</h1>
+<div class="subtitle">熱 CPI + 12 月升息押注推 10Y 破 5%、黃金重挫、美元 19 月高；荷莫茲四艘油輪襲擊與烏克蘭打俄煉廠給成品油托底</div>
+<div class="stamp">📡 報價快照：2026-11-12 (Thursday) 19:00 ET｜CL=F 88.78 / BZ=F 95.78 / HO=F 4.2822 / RB=F 2.6245 / GC=F 3884.80 / USO 146.07 / XLE 64.33 / XOM 169.78 / VLO 374.95 / MPC 412.85 / PSX 262.91 / TLT 79.72 / IEF 90.21 / NVDA 166.19 / SPY 757.12 / ^TNX 5.103 / ^VIX 18.70 / USD/CAD 1.4265 / USD/JPY 159.891。黃金現貨另見約 $3,866–3,887；FedWatch 12 月升息約 85–90%。</div>
+<div class="core">今日市場主交易邏輯不是地緣而是利率。熱 CPI 疊加 Fed 12 月升息押注把 10 年期美債殖利率推上 5.10%、美元指數升至 19 個月高、黃金重挫約 2.8% 至約 3,875。地緣有兩條有增量意義：Trump 對伊朗「毫不猶豫動武」警告疊加荷莫茲四艘油輪襲擊給原油托底，以及烏克蘭深度打擊俄煉廠的成品油裂解敘事；但油價被沙國 10 月增產 26% 與美庫存上升對沖，呈雙向拉鋸。</div>
+
+<section class="item-wrap">
+<h2 class="s-item-watch">【第①項｜監控級】Trump 對伊朗「毫不猶豫動武」警告，荷莫茲再傳四艘油輪爆炸 · 26.11.12</h2>
+<div class="item-body">
+<div class="grid4">
+  <div class="box"><h3>事件內容</h3><p>Trump 警告若德黑蘭威脅美國盟友或荷莫茲海峽船隻，將毫不猶豫對伊朗發動新軍事打擊；伊朗領導層呼籲檢討 NPT 成員身分並對未來攻擊報復。當日 IRGC 稱兩艘油輪因爆炸失能，稍後伊朗軍方稱另有兩艘「違規」油輪在海峽東側禁區觸雷起火，累計四艘。荷莫茲截至 11/12 對商業航運實質關閉，11/8 僅 3 艘過境（正常約 85 艘/日）。葉門胡塞稱攻擊沙國輸油管泵站與延布油設施。</p></div>
+  <div class="box"><h3>市場反應</h3><p>原油獲地緣托底但被供給端對沖。Brent 當日升至約 95.78，漲約 3.3%；WTI 約 88.78，漲約 2.6–2.9%。但沙烏地 10 月產量增加 26%、伊拉克增產至戰時紀錄、美原油庫存上升，壓制上行。</p></div>
+  <div class="box"><h3>政治角度</h3><p>Trump「We&#x27;ve got their Strait」姿態與伊朗「拒談、檢討 NPT」立場對峙，但 CENTCOM 稱要求以色列重啟對伊戰爭的報導為臆測，短期更像嘴炮對峙。海峽實質關閉屬存量風險非今日新增量，列監控級。</p></div>
+  <div class="box"><h3>金融角度</h3><p>可交易代理：原油 ICE:BRN / NYMEX:CL；成品油 NYMEX HO front、NYMEX RB front；能源股 XOM/CVX/XLE/USO。雙向風險，地緣溢價與沙國增產拉鋸，不宜單押多頭。Brent–WTI 價差是最純的荷莫茲海運表達。</p></div>
+</div>
+
+<h2 class="s-tools">會影響哪些金融工具 / 產品</h2>
+<div class="logic"><b>本項事件的傳導清單。</b>按期貨、期權、股票、債券、加密貨幣、外匯六類列舉；沒有穩定連結的類別標明「不建議納入」，不為填滿而編造。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>類別</th><th>產品</th><th>方向</th><th>為何受影響（傳導）</th></tr></thead>
+<tbody>
+<tr><td rowspan='4'>1) 期貨</td><td>Brent 原油連續</td><td class='dir-long'>多（偏雙向）</td><td class='logic-cell'>荷莫茲海運中斷 Brent 敏感度高於 WTI，但被沙國增產對沖</td></tr><tr><td>WTI 原油連續</td><td class='dir-long'>多（偏雙向）</td><td class='logic-cell'>原油多頭表達，內陸屬性地緣溢價反應弱於 Brent</td></tr><tr><td>取暖油/柴油 front</td><td class='dir-long'>多</td><td class='logic-cell'>荷莫茲中斷影響中東餾分油出口，柴油最先吃緊</td></tr><tr><td>RBOB 汽油 front</td><td class='dir-long'>多</td><td class='logic-cell'>原油成本推升+煉油原料受阻次級傳導</td></tr><tr><td rowspan='2'>2) 期權</td><td>WTI 原油期權（掛 CL）</td><td class='na'>買波動率/買 call</td><td class='logic-cell'>地緣尾部下原油凸性有價值，表達突發封鎖尾部</td></tr><tr><td>USO 選擇權鏈</td><td class='na'>買 call</td><td class='logic-cell'>零售帳戶有限風險原油多頭表達</td></tr><tr><td rowspan='4'>3) 股票</td><td>ExxonMobil</td><td class='dir-long'>多</td><td class='logic-cell'>油價地緣溢價直接利好上游現金流</td></tr><tr><td>Chevron</td><td class='dir-long'>多</td><td class='logic-cell'>綜合油商油價 beta 高</td></tr><tr><td>能源 ETF（SPDR Energy Select）</td><td class='dir-long'>多</td><td class='logic-cell'>能源板塊整體場內單一 ticker 表達</td></tr><tr><td>美國原油基金</td><td class='dir-long'>多</td><td class='logic-cell'>直接追蹤 WTI 的零售工具</td></tr><tr><td>4) 債券</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr><tr><td>5) 加密貨幣</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr><tr><td rowspan='1'>6) 外匯貨幣對</td><td>美元/加元</td><td class='dir-short'>偏空 USD（加元受益、淨中性）</td><td class='logic-cell'>油價上漲利好加元，但美元整體走強對沖</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-attack">一、穿透性強（易形成延續多日行情）</h2>
+<div class="logic"><b>判斷邏輯：</b>穿透性 = 定價驅動因子是「結構性慢變量」（供需路徑、庫存、運距、產能、政策路徑）而非「情緒性快變量」。慢變量單向釋放、有慣性、可被後續數據反覆坐實，適合順勢趨勢單 + 移動止損。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>穿透邏輯（驅動變量／傳導機制／時間尺度／失效條件）</th></tr></thead>
+<tbody>
+<tr><td>Brent 原油連續</td><td class='dir-long'>BUY（偏雙向）</td><td class='price'>$95.78<br><span class='warn'>yahoo BZ=F 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>94.0</span><br><span class='tag'>SL</span><span class='sl'>89.5</span><br><span class='tag'>TP</span><span class='tp'>104.0</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>荷莫茲實質關閉+四艘油輪襲擊</span><span class='mech'><span class='mech-label'>傳導機制：</span>海運瓶頸可用過境船數/OPEC 月報/沙國裝船量反覆確認</span><span class='mech'><span class='mech-label'>時間尺度：</span>數日至數週</span><span class='mech'><span class='mech-label'>失效條件：</span><span class='risk'>Brent 跌破 90 且地緣降溫</span></span><span class='tier t1'>中高穿透（地緣 vs 增產拉鋸）</span></td></tr><tr><td>取暖油/柴油 front</td><td class='dir-long'>BUY</td><td class='price'>$4.2822<br><span class='warn'>yahoo HO=F 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>4.20</span><br><span class='tag'>SL</span><span class='sl'>3.95</span><br><span class='tag'>TP</span><span class='tp'>4.75</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>中東餾分油出口受阻</span><span class='mech'><span class='mech-label'>傳導機制：</span>柴油庫存與裂解價差持續驗證</span><span class='mech'><span class='mech-label'>時間尺度：</span>數日至數週</span><span class='mech'><span class='mech-label'>失效條件：</span><span class='risk'>裂解收斂回事件前</span></span><span class='tier t1'>高穿透 第一梯隊</span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-defense">二、防守性強（波動有限、情緒退潮快、適合對沖或短打）</h2>
+<div class="logic"><b>判斷邏輯：</b>由情緒性快變量（避險溢價、隱含波動率）驅動，屬「脈衝-衰減」。不適合裸持趨勢單，適合對沖腿或短打。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>角色</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>防守性質（為何穿透性弱／為何防守性強／風險）</th></tr></thead>
+<tbody>
+<tr><td>能源 ETF（SPDR Energy Select）</td><td class='na'>短打對沖</td><td class='price'>$64.33</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>63.5</span><br><span class='tag'>SL</span><span class='sl'>61.5</span><br><span class='tag'>TP</span><span class='tp'>68.0</span><br><span class='warn'>消息面跳動為主</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>能源板塊整體單一 ticker</span><span class='mech'><span class='mech-label'>為何穿透性弱：</span>板塊受大盤 beta 影響，地緣訊號不純</span><span class='mech'><span class='mech-label'>為何防守性強：</span>流動性深、頭條一出即跳</span><span class='mech'><span class='mech-label'>風險：</span><span class='risk'>大盤回檔連帶拖累</span></span></td></tr><tr><td>美國原油基金</td><td class='dir-long'>零售版油價多頭短打</td><td class='price'>$146.07</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>143.0</span><br><span class='tag'>SL</span><span class='sl'>138.0</span><br><span class='tag'>TP</span><span class='tp'>156.0</span><br><span class='warn'>Brent 本月已跌約 9%，反彈性質</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>原油頭條</span><span class='mech'><span class='mech-label'>為何穿透性弱：</span>追蹤 WTI 期貨有 roll 損耗</span><span class='mech'><span class='mech-label'>為何防守性強：</span>零售可直接下單、頭條敏感</span><span class='mech'><span class='mech-label'>風險：</span><span class='risk'>沙國增產壓回</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-both">三、可兼顧兩者（進可攻、退可守）</h2>
+<div class="logic"><b>判斷邏輯：</b>兼顧型 = 結構（進攻）+ 對沖（防守）內建於同一結構。能過濾整體 beta，只保留與本則新聞對應的純命題。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品/結構</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>攻守兼顧邏輯（進攻源／防守源／為何抗噪）</th></tr></thead>
+<tbody>
+<tr><td>Brent–WTI 價差（多 BRN／空 CL）</td><td class='dir-long'>做闊</td><td class='price'>$95.78<br><span class='warn'>錨 Brent BZ=F 95.78（對 CL=F 88.78，價差約 7.0）</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>94.0</span><br><span class='tag'>SL</span><span class='sl'>92.5</span><br><span class='tag'>TP</span><span class='tp'>99.0</span></td><td class='logic-cell'><span class='mech'><span class='mech-label'>進攻源：</span>荷莫茲是純海運事件，Brent 比 Cushing WTI 更敏感</span><span class='mech'><span class='mech-label'>防守源：</span>過濾整體油價被沙國增產壓下的噪音</span><span class='mech'><span class='mech-label'>為何抗噪：</span>只留中東海運中斷這條淨變量，不押絕對油價方向</span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-strat">四、策略推薦（事件驅動視角，附觸發條件）</h2>
+<div class="table-scroll">
+<table>
+<thead><tr><th>策略</th><th>類型</th><th>交易價位（Limit / SL / TP）</th><th>邏輯 / 觸發條件（進場理由／工具選擇／加碼／止損反手）</th></tr></thead>
+<tbody>
+<tr><td>策略 A｜BRN-CL 價差做闊（兼顧）</td><td>兼顧對沖</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>94.0</span><br><span class='tag'>SL</span><span class='sl'>92.5</span><br><span class='tag'>TP</span><span class='tp'>99.0</span><br><span class='warn'>Brent 95.78 / WTI 88.78，價差約 7.0</span></td><td class='logic-cell'><b>進場理由：</b>Brent 回踩 94.0、價差回踩 6.5 進場<span class='mech'><span class='mech-label'>工具選擇：</span>ICE:BRN 多 + NYMEX:CL 空</span><span class='mech'><span class='mech-label'>觸發加碼：</span>新增油輪襲擊或過境船數再降</span><span class='mech'><span class='mech-label'>觸發止損/反手：</span><span class='risk'>價差收斂回 4.5 以下（溢價被增產完全抵銷）則平倉</span></span></td></tr><tr><td>策略 B｜HO front 多（穿透）</td><td>核心進攻</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>4.20</span><br><span class='tag'>SL</span><span class='sl'>3.95</span><br><span class='tag'>TP</span><span class='tp'>4.75</span><br><span class='warn'>front≈4.2822</span></td><td class='logic-cell'><b>進場理由：</b>回踩 4.20 進場<span class='mech'><span class='mech-label'>工具選擇：</span>NYMEX:HO front</span><span class='mech'><span class='mech-label'>觸發加碼：</span>荷莫茲過境續降</span><span class='mech'><span class='mech-label'>觸發止損/反手：</span><span class='risk'>CENTCOM 持續降溫+裂解收斂則平多</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</section>
+
+<section class="item-wrap">
+<h2 class="s-item-watch">【第②項｜監控級】烏克蘭十天內打擊俄五大煉廠，Omsk 第三度被襲，Rosneft 限售燃油 · 26.11.12</h2>
+<div class="item-body">
+<div class="grid4">
+  <div class="box"><h3>事件內容</h3><p>烏克蘭總參謀部稱 10/30–11/11 間至少打擊九座俄煉廠含五座最大設施，受損名目產能逾 1.2 億公噸/年、約佔俄總煉能 36%。特種部隊 11/11 第三度打擊俄最大煉廠 Omsk（Gazprom 持有）。Rosneft 已在全俄加油站對燃油銷售設限。11/12 澤倫斯基在都柏林會見 Witkoff 與 Kushner，稱歐洲將參與下一輪和談、即將進行規模最大換俘。</p></div>
+  <div class="box"><h3>市場反應</h3><p>對全球原油直接影響有限（受影響的是俄國內成品油），主要作用於成品油裂解價差敘事。當日原油漲勢主因在中東而非俄烏。</p></div>
+  <div class="box"><h3>政治角度</h3><p>烏克蘭把遠程打擊當談判槓桿，和談進行中仍續打能源目標；此前 10/11 單方面宣布的能源停火已明顯重啟。</p></div>
+  <div class="box"><h3>金融角度</h3><p>俄標的（Rosneft/Gazprom/盧布/俄債）一律不納入。場內代理走成品油與美國煉廠：NYMEX HO front（柴油）最直接、ICE gasoil front 次之；美國煉廠 MPC/VLO/PSX。偏敘事性，列監控級。</p></div>
+</div>
+
+<h2 class="s-tools">會影響哪些金融工具 / 產品</h2>
+<div class="logic"><b>本項事件的傳導清單。</b>按期貨、期權、股票、債券、加密貨幣、外匯六類列舉；沒有穩定連結的類別標明「不建議納入」，不為填滿而編造。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>類別</th><th>產品</th><th>方向</th><th>為何受影響（傳導）</th></tr></thead>
+<tbody>
+<tr><td rowspan='3'>1) 期貨</td><td>ULSD/柴油 front</td><td class='dir-long'>多</td><td class='logic-cell'>俄成品油出口受阻+國內限售，柴油裂解走闊最直接</td></tr><tr><td>ICE 柴油（gasoil）front</td><td class='dir-long'>多</td><td class='logic-cell'>歐洲柴油基準對俄餾分油缺口最敏感</td></tr><tr><td>RBOB 汽油 front</td><td class='dir-long'>多（次之）</td><td class='logic-cell'>汽油裂解受益但不如柴油純粹</td></tr><tr><td rowspan='1'>2) 期權</td><td>Valero 選擇權鏈</td><td class='na'>買 call</td><td class='logic-cell'>裂解走闊利好純煉廠，用單一 ticker 選擇權做有限風險多頭</td></tr><tr><td rowspan='3'>3) 股票</td><td>Marathon Petroleum</td><td class='dir-long'>多</td><td class='logic-cell'>純煉廠，裂解走闊直接利好</td></tr><tr><td>Valero</td><td class='dir-long'>多</td><td class='logic-cell'>煉油毛利彈性高</td></tr><tr><td>Phillips 66</td><td class='dir-long'>多</td><td class='logic-cell'>同屬煉廠受益族</td></tr><tr><td>4) 債券</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr><tr><td>5) 加密貨幣</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr><tr><td>6) 外匯貨幣對</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-attack">一、穿透性強（易形成延續多日行情）</h2>
+<div class="logic"><b>判斷邏輯：</b>穿透性 = 定價驅動因子是「結構性慢變量」（供需路徑、庫存、運距、產能、政策路徑）而非「情緒性快變量」。慢變量單向釋放、有慣性、可被後續數據反覆坐實，適合順勢趨勢單 + 移動止損。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>穿透邏輯（驅動變量／傳導機制／時間尺度／失效條件）</th></tr></thead>
+<tbody>
+<tr><td>ULSD/柴油 front</td><td class='dir-long'>BUY</td><td class='price'>$4.2822<br><span class='warn'>yahoo HO=F 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>4.20</span><br><span class='tag'>SL</span><span class='sl'>3.95</span><br><span class='tag'>TP</span><span class='tp'>4.80</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>俄煉廠產能被實體摧毀+國內限售</span><span class='mech'><span class='mech-label'>傳導機制：</span>可持續累積的供給缺口，有裂解/歐洲庫存反覆驗證</span><span class='mech'><span class='mech-label'>時間尺度：</span>數週</span><span class='mech'><span class='mech-label'>失效條件：</span><span class='risk'>裂解回事件前水準</span></span><span class='tier t1'>高穿透 第一梯隊</span></td></tr><tr><td>Marathon Petroleum</td><td class='dir-long'>BUY</td><td class='price'>$412.85<br><span class='warn'>yahoo MPC 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>408.0</span><br><span class='tag'>SL</span><span class='sl'>392.0</span><br><span class='tag'>TP</span><span class='tp'>448.0</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>柴油裂解走闊</span><span class='mech'><span class='mech-label'>傳導機制：</span>純煉廠毛利可用季報/裂解驗證</span><span class='mech'><span class='mech-label'>時間尺度：</span>數週</span><span class='mech'><span class='mech-label'>失效條件：</span><span class='risk'>跌破 400 結構</span></span><span class='tier t1'>中高穿透</span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-defense">二、防守性強（波動有限、情緒退潮快、適合對沖或短打）</h2>
+<div class="logic"><b>判斷邏輯：</b>由情緒性快變量（避險溢價、隱含波動率）驅動，屬「脈衝-衰減」。不適合裸持趨勢單，適合對沖腿或短打。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>角色</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>防守性質（為何穿透性弱／為何防守性強／風險）</th></tr></thead>
+<tbody>
+<tr><td>Valero</td><td class='na'>裂解受益短打</td><td class='price'>$374.95</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>370.0</span><br><span class='tag'>SL</span><span class='sl'>356.0</span><br><span class='tag'>TP</span><span class='tp'>405.0</span><br><span class='warn'>波動快回、消息面反彈重</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>裂解價差</span><span class='mech'><span class='mech-label'>為何穿透性弱：</span>個股受大盤與油價頭條混雜</span><span class='mech'><span class='mech-label'>為何防守性強：</span>煉油毛利彈性高、頭條敏感</span><span class='mech'><span class='mech-label'>風險：</span><span class='risk'>油價走強壓縮裂解</span></span></td></tr><tr><td>Phillips 66</td><td class='na'>裂解受益短打</td><td class='price'>$262.91</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>258.0</span><br><span class='tag'>SL</span><span class='sl'>248.0</span><br><span class='tag'>TP</span><span class='tp'>285.0</span><br><span class='warn'>同屬煉廠受益族</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>裂解價差</span><span class='mech'><span class='mech-label'>為何穿透性弱：</span>多元業務稀釋純裂解彈性</span><span class='mech'><span class='mech-label'>為何防守性強：</span>能加工重油、裂解走闊受益</span><span class='mech'><span class='mech-label'>風險：</span><span class='risk'>整體油價頭條拖累</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-both">三、可兼顧兩者（進可攻、退可守）</h2>
+<div class="logic"><b>判斷邏輯：</b>兼顧型 = 結構（進攻）+ 對沖（防守）內建於同一結構。能過濾整體 beta，只保留與本則新聞對應的純命題。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品/結構</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>攻守兼顧邏輯（進攻源／防守源／為何抗噪）</th></tr></thead>
+<tbody>
+<tr><td>柴油裂解代理（多 HO／空 CL）</td><td class='dir-long'>做闊</td><td class='price'>$4.2822<br><span class='warn'>錨 HO=F 4.2822（對 CL=F 88.78，裂解 crack 約每桶 $91.1）</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>4.15</span><br><span class='tag'>SL</span><span class='sl'>3.95</span><br><span class='tag'>TP</span><span class='tp'>4.80</span></td><td class='logic-cell'><span class='mech'><span class='mech-label'>進攻源：</span>事件衝擊的正是俄成品油而非全球原油</span><span class='mech'><span class='mech-label'>防守源：</span>做空原油過濾整體油價方向</span><span class='mech'><span class='mech-label'>為何抗噪：</span>只留成品油緊/原油鬆的結構，教科書級兼顧</span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-strat">四、策略推薦（事件驅動視角，附觸發條件）</h2>
+<div class="table-scroll">
+<table>
+<thead><tr><th>策略</th><th>類型</th><th>交易價位（Limit / SL / TP）</th><th>邏輯 / 觸發條件（進場理由／工具選擇／加碼／止損反手）</th></tr></thead>
+<tbody>
+<tr><td>策略 A｜HO 多 / CL 空 柴油裂解（兼顧）</td><td>兼顧對沖</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>4.15</span><br><span class='tag'>SL</span><span class='sl'>3.95</span><br><span class='tag'>TP</span><span class='tp'>4.80</span><br><span class='warn'>HO 4.2822、CL 88.78</span></td><td class='logic-cell'><b>進場理由：</b>HO 回踩 4.15 進場、同步空 CL<span class='mech'><span class='mech-label'>工具選擇：</span>NYMEX:HO front 多 + NYMEX:CL front 空</span><span class='mech'><span class='mech-label'>觸發加碼：</span>Omsk 外再有大廠被擊或俄限售擴大</span><span class='mech'><span class='mech-label'>觸發止損/反手：</span><span class='risk'>裂解回事件前水準則平倉</span></span></td></tr><tr><td>策略 B｜MPC 多（防守短打）</td><td>防守短打</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>408.0</span><br><span class='tag'>SL</span><span class='sl'>392.0</span><br><span class='tag'>TP</span><span class='tp'>448.0</span><br><span class='warn'>現價 412.85</span></td><td class='logic-cell'><b>進場理由：</b>回踩 408 進場<span class='mech'><span class='mech-label'>工具選擇：</span>NYSE:MPC</span><span class='mech'><span class='mech-label'>觸發加碼：</span>裂解續走闊</span><span class='mech'><span class='mech-label'>觸發止損/反手：</span><span class='risk'>跌破 400 結構則出場，不當主升浪</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</section>
+
+<section class="item-wrap">
+<h2 class="s-item-action">【第③項｜行動級】熱 CPI + Fed 升息押注推 10Y 破 5%、黃金重挫、美元創高 · 26.11.12</h2>
+<div class="item-body">
+<div class="grid4">
+  <div class="box"><h3>事件內容</h3><p>非傳統地緣，但今日對全球資產定價衝擊力最大的宏觀變化，列第一順位行動級。美債交易員假期後回歸、週四賣債，將 10 年期殖利率推回 5% 上方。10 月核心 CPI 月增 0.3%（連三個月）、頭條 0.4%，強化 12 月升息；CME FedWatch 12 月升息 25bp 機率約 85–90%，半碼機率約 11–15%。</p></div>
+  <div class="box"><h3>市場反應</h3><p>美元指數升至約 103.17（19 個月高）；黃金現貨跌約 2.8% 至約 3,875（GC=F 3884.80）；WTI 漲 2.9% 至約 88.78；比特幣在 Nvidia CEO 辭職後下滑約 3.4% 至約 71,000–71,650。10 年殖利率約 5.10%（^TNX 5.103）、2 年跳升約 19bp 至近 4.74–4.86%（2025 年 4 月來最大單日）。USD/JPY 觸及約 160（JPY=X 159.891）。</p></div>
+  <div class="box"><h3>政治角度</h3><p>無直接地緣驅動，純貨幣政策。但高利率收緊全球風險胃納，放大所有地緣尾部風險傳導（避險與風險資產同跌是壓力訊號）。</p></div>
+  <div class="box"><h3>金融角度</h3><p>場內代理：黃金 COMEX:GC 承壓；利率 CBOT:ZN/ZT/ZB 空頭、債券 ETF TLT/IEF 空；外匯 USD/JPY 多、CME:6E 空、ICE:DX 多；BTC 用 CME:BTC。今日唯一行動級，方向明確、流動性最深。</p></div>
+</div>
+
+<h2 class="s-tools">會影響哪些金融工具 / 產品</h2>
+<div class="logic"><b>本項事件的傳導清單。</b>按期貨、期權、股票、債券、加密貨幣、外匯六類列舉；沒有穩定連結的類別標明「不建議納入」，不為填滿而編造。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>類別</th><th>產品</th><th>方向</th><th>為何受影響（傳導）</th></tr></thead>
+<tbody>
+<tr><td rowspan='5'>1) 期貨</td><td>黃金連續</td><td class='dir-short'>空</td><td class='logic-cell'>實質利率上行壓制無息資產，今日已重挫，方向最明確</td></tr><tr><td>10Y T-Note 期貨</td><td class='dir-short'>空</td><td class='logic-cell'>殖利率破 5%、升息押注升溫，長債價格下行</td></tr><tr><td>2Y T-Note 期貨</td><td class='dir-short'>空</td><td class='logic-cell'>前端對政策利率最敏感，2Y 跳升 19bp</td></tr><tr><td>美元指數期貨</td><td class='dir-long'>多</td><td class='logic-cell'>利差擴大支撐美元創 19 個月高</td></tr><tr><td>歐元期貨</td><td class='dir-short'>空</td><td class='logic-cell'>美元強勢對手方表達</td></tr><tr><td rowspan='2'>2) 期權</td><td>TLT 選擇權鏈</td><td class='na'>買 put</td><td class='logic-cell'>長債 ETF put 表達殖利率續升的有限風險空頭</td></tr><tr><td>黃金期貨期權（掛 GC）</td><td class='na'>買 put</td><td class='logic-cell'>利率上行下黃金空頭，用 put 控制風險</td></tr><tr><td rowspan='2'>3) 股票</td><td>20+ 年美債 ETF</td><td class='dir-short'>空</td><td class='logic-cell'>最直接的長債下跌零售工具</td></tr><tr><td>7-10 年美債 ETF</td><td class='dir-short'>空</td><td class='logic-cell'>中段久期表達</td></tr><tr><td rowspan='3'>4) 債券</td><td>10Y T-Note 期貨</td><td class='dir-short'>空</td><td class='logic-cell'>殖利率上行主引擎</td></tr><tr><td>30Y 長債期貨</td><td class='dir-short'>空</td><td class='logic-cell'>久期最長，對殖利率上行彈性最大</td></tr><tr><td>20+ 年美債 ETF</td><td class='dir-short'>空</td><td class='logic-cell'>零售做空長債場內工具</td></tr><tr><td rowspan='1'>5) 加密貨幣</td><td>比特幣期貨</td><td class='dir-short'>空（信心中等）</td><td class='logic-cell'>高利率收緊風險胃納+Nvidia 人事，今日 -3.4%，但利率傳導噪音大</td></tr><tr><td rowspan='4'>6) 外匯貨幣對</td><td>美元/日圓</td><td class='dir-long'>多</td><td class='logic-cell'>美日利差擴大推至約 160，利率主軸最高 beta</td></tr><tr><td>歐元/美元</td><td class='dir-short'>空</td><td class='logic-cell'>美元全面走強對手方</td></tr><tr><td>英鎊/美元</td><td class='dir-short'>空</td><td class='logic-cell'>美元強勢受壓 G10</td></tr><tr><td>澳元/美元</td><td class='dir-short'>空</td><td class='logic-cell'>風險胃納收緊+美元強，風險貨幣承壓</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-attack">一、穿透性強（易形成延續多日行情）</h2>
+<div class="logic"><b>判斷邏輯：</b>穿透性 = 定價驅動因子是「結構性慢變量」（供需路徑、庫存、運距、產能、政策路徑）而非「情緒性快變量」。慢變量單向釋放、有慣性、可被後續數據反覆坐實，適合順勢趨勢單 + 移動止損。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>穿透邏輯（驅動變量／傳導機制／時間尺度／失效條件）</th></tr></thead>
+<tbody>
+<tr><td>黃金連續</td><td class='dir-short'>SELL</td><td class='price'>$3,884.80<br><span class='warn'>yahoo GC=F 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>3920.0</span><br><span class='tag'>SL</span><span class='sl'>3985.0</span><br><span class='tag'>TP</span><span class='tp'>3600.0</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>實質利率上行、12 月升息押注</span><span class='mech'><span class='mech-label'>傳導機制：</span>每次 Fed 發言/CPI/PCE 反覆驗證，持倉成本可量化</span><span class='mech'><span class='mech-label'>時間尺度：</span>數日至數週</span><span class='mech'><span class='mech-label'>失效條件：</span><span class='risk'>站回 4,027 或台海升級避險</span></span><span class='tier t1'>高穿透 第一梯隊</span></td></tr><tr><td>20+ 年美債 ETF</td><td class='dir-short'>SELL</td><td class='price'>$79.72<br><span class='warn'>yahoo TLT 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>81.0</span><br><span class='tag'>SL</span><span class='sl'>82.5</span><br><span class='tag'>TP</span><span class='tp'>76.5</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>10Y 殖利率 5.10%</span><span class='mech'><span class='mech-label'>傳導機制：</span>殖利率路徑可持續驗證、久期彈性大</span><span class='mech'><span class='mech-label'>時間尺度：</span>數日至數週</span><span class='mech'><span class='mech-label'>失效條件：</span><span class='risk'>殖利率回落至 4.9% 下方</span></span><span class='tier t1'>高穿透 第一梯隊</span></td></tr><tr><td>美元/日圓</td><td class='dir-long'>BUY</td><td class='price'>159.891<br><span class='warn'>yahoo JPY=X 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>159.0</span><br><span class='tag'>SL</span><span class='sl'>158.3</span><br><span class='tag'>TP</span><span class='tp'>162.5</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>美日利差擴大</span><span class='mech'><span class='mech-label'>傳導機制：</span>利差最高 beta 的 G10 表達</span><span class='mech'><span class='mech-label'>時間尺度：</span>數日</span><span class='mech'><span class='mech-label'>失效條件：</span><span class='risk'>日本當局干預或避險升級</span></span><span class='tier t1'>中高穿透（干預風險）</span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-defense">二、防守性強（波動有限、情緒退潮快、適合對沖或短打）</h2>
+<div class="logic"><b>判斷邏輯：</b>由情緒性快變量（避險溢價、隱含波動率）驅動，屬「脈衝-衰減」。不適合裸持趨勢單，適合對沖腿或短打。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>角色</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>防守性質（為何穿透性弱／為何防守性強／風險）</th></tr></thead>
+<tbody>
+<tr><td>7-10 年美債 ETF</td><td class='dir-short'>溫和久期空頭/對沖</td><td class='price'>$90.21<br><span class='warn'>yahoo IEF 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>91.0</span><br><span class='tag'>SL</span><span class='sl'>92.0</span><br><span class='tag'>TP</span><span class='tp'>87.5</span><br><span class='warn'>跌幅較 TLT 小</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>殖利率上行</span><span class='mech'><span class='mech-label'>為何穿透性弱：</span>中段久期彈性有限</span><span class='mech'><span class='mech-label'>為何防守性強：</span>波動溫和、回撤可控</span><span class='mech'><span class='mech-label'>風險：</span><span class='risk'>避險流突襲推升美債</span></span></td></tr><tr><td>SPDR 標普 500 ETF</td><td class='dir-short'>風險胃納短打空頭</td><td class='price'>$757.12<br><span class='warn'>yahoo SPY 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>762.0</span><br><span class='tag'>SL</span><span class='sl'>772.0</span><br><span class='tag'>TP</span><span class='tp'>735.0</span><br><span class='warn'>高利率收緊風險胃納、VIX 18.70</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>利率上行壓估值</span><span class='mech'><span class='mech-label'>為何穿透性弱：</span>大盤受多重因素驅動、利率訊號不純</span><span class='mech'><span class='mech-label'>為何防守性強：</span>流動性最深、頭條敏感可快進快出</span><span class='mech'><span class='mech-label'>風險：</span><span class='risk'>盈利或 Fed 轉鴿反彈</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-both">三、可兼顧兩者（進可攻、退可守）</h2>
+<div class="logic"><b>判斷邏輯：</b>兼顧型 = 結構（進攻）+ 對沖（防守）內建於同一結構。能過濾整體 beta，只保留與本則新聞對應的純命題。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品/結構</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>攻守兼顧邏輯（進攻源／防守源／為何抗噪）</th></tr></thead>
+<tbody>
+<tr><td>TLT 空（進攻）+ IEF 空（控回撤）久期分層</td><td class='dir-short'>雙腿做空</td><td class='price'>$79.72<br><span class='warn'>錨 TLT 79.72（IEF 90.21）</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>81.0</span><br><span class='tag'>SL</span><span class='sl'>82.5</span><br><span class='tag'>TP</span><span class='tp'>76.5</span></td><td class='logic-cell'><span class='mech'><span class='mech-label'>進攻源：</span>TLT 吃久期彈性</span><span class='mech'><span class='mech-label'>防守源：</span>IEF 控回撤</span><span class='mech'><span class='mech-label'>為何抗噪：</span>殖利率上行主題的分層表達，進攻與保護並存</span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-strat">四、策略推薦（事件驅動視角，附觸發條件）</h2>
+<div class="table-scroll">
+<table>
+<thead><tr><th>策略</th><th>類型</th><th>交易價位（Limit / SL / TP）</th><th>邏輯 / 觸發條件（進場理由／工具選擇／加碼／止損反手）</th></tr></thead>
+<tbody>
+<tr><td>策略 A｜GC 空（核心穿透，當前基準）</td><td>核心進攻</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>3920.0</span><br><span class='tag'>SL</span><span class='sl'>3985.0</span><br><span class='tag'>TP</span><span class='tp'>3600.0</span><br><span class='warn'>GC=F 3884.80</span></td><td class='logic-cell'><b>進場理由：</b>反彈至 3,920 一帶進場<span class='mech'><span class='mech-label'>工具選擇：</span>COMEX:GC</span><span class='mech'><span class='mech-label'>觸發加碼：</span>Fed 官員確認 12 月升息、下一份通膨續熱</span><span class='mech'><span class='mech-label'>觸發止損/反手：</span><span class='risk'>台海升級避險流啟動則減碼並轉中性</span></span></td></tr><tr><td>策略 B｜TLT 空（利率）</td><td>核心進攻</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>81.0</span><br><span class='tag'>SL</span><span class='sl'>82.5</span><br><span class='tag'>TP</span><span class='tp'>76.5</span><br><span class='warn'>TLT 79.72</span></td><td class='logic-cell'><b>進場理由：</b>反彈至 81 進場<span class='mech'><span class='mech-label'>工具選擇：</span>NASDAQ:TLT</span><span class='mech'><span class='mech-label'>觸發加碼：</span>殖利率續升破 5.2%</span><span class='mech'><span class='mech-label'>觸發止損/反手：</span><span class='risk'>殖利率回落 4.9% 下方則出場</span></span></td></tr><tr><td>策略 C｜USD/JPY 多（外匯）</td><td>核心進攻</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>159.0</span><br><span class='tag'>SL</span><span class='sl'>158.3</span><br><span class='tag'>TP</span><span class='tp'>162.5</span><br><span class='warn'>即期 159.891</span></td><td class='logic-cell'><b>進場理由：</b>回踩 159.0 進場<span class='mech'><span class='mech-label'>工具選擇：</span>即期 USD/JPY</span><span class='mech'><span class='mech-label'>觸發加碼：</span>殖利率續升</span><span class='mech'><span class='mech-label'>觸發止損/反手：</span><span class='risk'>日本當局干預跡象或台海避險則減碼</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</section>
+
+<section class="item-wrap">
+<h2 class="s-item-watch">【第④項｜監控級】美國國務院披露經手 120 億美元委內瑞拉石油收入 · 26.11.12</h2>
+<div class="item-body">
+<div class="grid4">
+  <div class="box"><h3>事件內容</h3><p>美國國務院週四公布報告，稱今年前九個月經手逾 120 億美元委內瑞拉石油收入，安排始於 1 月拘押馬杜羅後；約 99% 資金與石油採購相關。委內瑞拉臨時總統 Delcy Rodríguez 於 11/12 在 COP31 主張增產石油的主權權利，正值華盛頓尋求重振委國產量。報告隱去存款方，《紐約時報》報導多來自 Trafigura 與 Vitol。</p></div>
+  <div class="box"><h3>市場反應</h3><p>無即時可量化場內價格衝擊；屬中長期供給面增量——委國重油回流利好重質/酸性原油與美灣煉廠。對油價為結構性利空，今日被中東地緣與宏觀蓋過。</p></div>
+  <div class="box"><h3>政治角度</h3><p>美國對委國事實控制的財務透明化動作，Trump 將委國石油收入作為政治敘事；供給面方向是持續重啟委國出口。</p></div>
+  <div class="box"><h3>金融角度</h3><p>Trafigura/Vitol/PDVSA 皆非場內標的，不納入。可交易代理為能加工委國重油的美灣煉廠 VLO/PSX；油價方向用 NYMEX:CL。偏結構性供給敘事，列監控級。</p></div>
+</div>
+
+<h2 class="s-tools">會影響哪些金融工具 / 產品</h2>
+<div class="logic"><b>本項事件的傳導清單。</b>按期貨、期權、股票、債券、加密貨幣、外匯六類列舉；沒有穩定連結的類別標明「不建議納入」，不為填滿而編造。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>類別</th><th>產品</th><th>方向</th><th>為何受影響（傳導）</th></tr></thead>
+<tbody>
+<tr><td rowspan='1'>1) 期貨</td><td>WTI 原油連續</td><td class='dir-short'>空（結構性中長期）</td><td class='logic-cell'>委國重油回流為供給增量，結構性利空，但短期被中東+宏觀蓋過</td></tr><tr><td>2) 期權</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr><tr><td rowspan='2'>3) 股票</td><td>Valero</td><td class='dir-long'>多</td><td class='logic-cell'>重質/酸性原油回流利好高複雜度美灣煉廠，重油折價擴大利好毛利</td></tr><tr><td>Phillips 66</td><td class='dir-long'>多</td><td class='logic-cell'>同為能加工重油的美灣煉廠受益族</td></tr><tr><td>4) 債券</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr><tr><td>5) 加密貨幣</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr><tr><td>6) 外匯貨幣對</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-attack">一、穿透性強（易形成延續多日行情）</h2>
+<div class="logic"><b>判斷邏輯：</b>穿透性 = 定價驅動因子是「結構性慢變量」（供需路徑、庫存、運距、產能、政策路徑）而非「情緒性快變量」。慢變量單向釋放、有慣性、可被後續數據反覆坐實，適合順勢趨勢單 + 移動止損。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>穿透邏輯（驅動變量／傳導機制／時間尺度／失效條件）</th></tr></thead>
+<tbody>
+<tr><td>Valero</td><td class='dir-long'>BUY（中長期結構）</td><td class='price'>$374.95<br><span class='warn'>yahoo VLO 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>368.0</span><br><span class='tag'>SL</span><span class='sl'>352.0</span><br><span class='tag'>TP</span><span class='tp'>410.0</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>委國重油回流、重油折價擴大</span><span class='mech'><span class='mech-label'>傳導機制：</span>委國實際出口量與重油折價可持續驗證</span><span class='mech'><span class='mech-label'>時間尺度：</span>數週至數月</span><span class='mech'><span class='mech-label'>失效條件：</span><span class='risk'>委國增產落空或整體裂解收窄</span></span><span class='tier t1'>中高穿透（慢變量）</span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-defense">二、防守性強（波動有限、情緒退潮快、適合對沖或短打）</h2>
+<div class="logic"><b>判斷邏輯：</b>由情緒性快變量（避險溢價、隱含波動率）驅動，屬「脈衝-衰減」。不適合裸持趨勢單，適合對沖腿或短打。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>角色</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>防守性質（為何穿透性弱／為何防守性強／風險）</th></tr></thead>
+<tbody>
+<tr><td>Phillips 66</td><td class='na'>慢變量短打</td><td class='price'>$262.91<br><span class='warn'>yahoo PSX 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>258.0</span><br><span class='tag'>SL</span><span class='sl'>248.0</span><br><span class='tag'>TP</span><span class='tp'>285.0</span><br><span class='warn'>供給增量為慢變量</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>重油折價/整體裂解</span><span class='mech'><span class='mech-label'>為何穿透性弱：</span>短期受整體油價與裂解頭條帶動</span><span class='mech'><span class='mech-label'>為何防守性強：</span>能加工重油、結構性受益</span><span class='mech'><span class='mech-label'>風險：</span><span class='risk'>油價頭條與大盤拖累</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-both">三、可兼顧兩者（進可攻、退可守）</h2>
+<div class="logic"><b>判斷邏輯：</b>兼顧型 = 結構（進攻）+ 對沖（防守）內建於同一結構。能過濾整體 beta，只保留與本則新聞對應的純命題。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品/結構</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>攻守兼顧邏輯（進攻源／防守源／為何抗噪）</th></tr></thead>
+<tbody>
+<tr><td colspan='5' class='na'>本項沒有合適的攻守兼顧結構。</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-strat">四、策略推薦（事件驅動視角，附觸發條件）</h2>
+<div class="table-scroll">
+<table>
+<thead><tr><th>策略</th><th>類型</th><th>交易價位（Limit / SL / TP）</th><th>邏輯 / 觸發條件（進場理由／工具選擇／加碼／止損反手）</th></tr></thead>
+<tbody>
+<tr><td>策略 A｜VLO 多（輕量結構，僅監控）</td><td>監控</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>368.0</span><br><span class='tag'>SL</span><span class='sl'>352.0</span><br><span class='tag'>TP</span><span class='tp'>410.0</span><br><span class='warn'>現價 374.95</span></td><td class='logic-cell'><b>進場理由：</b>回踩 368 輕倉<span class='mech'><span class='mech-label'>工具選擇：</span>NYSE:VLO</span><span class='mech'><span class='mech-label'>觸發加碼：</span>委國實際增產數據或重油折價擴大確認才加碼</span><span class='mech'><span class='mech-label'>觸發止損/反手：</span><span class='risk'>為何不設 CL 空：第①②項已在油價持多/做價差，疊加 CL 空自相矛盾，故委國敘事只走煉廠個股腿</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</section>
+
+<section class="item-wrap">
+<h2 class="s-item-tail">【第⑤項｜尾部風險】中國疑對台進行未公開大規模「封鎖」演習 · 26.11.12</h2>
+<div class="item-body">
+<div class="grid4">
+  <div class="box"><h3>事件內容</h3><p>AEI/ISW 評估中國可能正進行未公開大規模軍事演習，模擬包圍孤立台灣，規模大於 2025 年「正義行動」，動用東部、北部、南部三大戰區兵力。台灣國防部長顧立雄 11/10 向立法院表示中國以遼寧號航母群在西太平洋進行區域拒止演練。不公開命名演習明顯偏離慣例，意在營造解放軍可隨時封鎖台灣的印象。</p></div>
+  <div class="box"><h3>市場反應</h3><p>今日無可辨識台海相關場內價格異動；半導體今日由 Nvidia CEO 辭職與資金輪動至 AMD/Broadcom 主導，非台海。屬尾部風險持續累積。</p></div>
+  <div class="box"><h3>政治角度</h3><p>不公開命名演習是認知戰手法，侵蝕台灣與區域對美協防信心，屬灰色地帶升級。</p></div>
+  <div class="box"><h3>金融角度</h3><p>台海尾部代理：半導體 NVDA、TSM ADR；避險 GC、USD/JPY（尾部翻空）、USD/CNH 多。目前無須配置，僅作監控；台股 2330 須留意流動性與外資限制，以 TSM ADR 為主要場內表達。</p></div>
+</div>
+
+<h2 class="s-tools">會影響哪些金融工具 / 產品</h2>
+<div class="logic"><b>本項事件的傳導清單。</b>按期貨、期權、股票、債券、加密貨幣、外匯六類列舉；沒有穩定連結的類別標明「不建議納入」，不為填滿而編造。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>類別</th><th>產品</th><th>方向</th><th>為何受影響（傳導）</th></tr></thead>
+<tbody>
+<tr><td rowspan='2'>1) 期貨</td><td>S&amp;P500 E-mini</td><td class='dir-short'>空（尾部避險，暫不配置）</td><td class='logic-cell'>台海封鎖升級衝擊全球風險資產，今日無場內異動</td></tr><tr><td>黃金連續</td><td class='dir-long'>多（尾部避險）</td><td class='logic-cell'>事態升級時黃金避險，但與第③項利率空頭相反</td></tr><tr><td rowspan='1'>2) 期權</td><td>SPY 選擇權</td><td class='na'>買 put（尾部對沖）</td><td class='logic-cell'>低機率高衝擊，用價外 put 表達最合適</td></tr><tr><td rowspan='2'>3) 股票</td><td>台積電 ADR</td><td class='dir-short'>空（尾部）</td><td class='logic-cell'>半導體供應鏈集中台灣，封鎖情境直接衝擊</td></tr><tr><td>NVIDIA</td><td class='dir-short'>空（尾部）</td><td class='logic-cell'>對台積電代工高度依賴</td></tr><tr><td rowspan='1'>4) 債券</td><td>20+ 年美債 ETF</td><td class='dir-long'>多（尾部避險）</td><td class='logic-cell'>台海升級避險流壓低殖利率，但與第③項相反，僅尾部成立</td></tr><tr><td>5) 加密貨幣</td><td class='na' colspan='3'>本項無明顯穩定傳導，不建議硬湊</td></tr><tr><td rowspan='2'>6) 外匯貨幣對</td><td>美元/離岸人民幣</td><td class='dir-long'>多 USD（尾部）</td><td class='logic-cell'>台海升級壓制人民幣，最直接台海外匯表達</td></tr><tr><td>美元/日圓</td><td class='dir-short'>空（尾部避險，與第③項相反）</td><td class='logic-cell'>亞洲地緣升級日圓避險走強，今日利率主軸壓過，僅尾部翻空</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-attack">一、穿透性強（易形成延續多日行情）</h2>
+<div class="logic"><b>判斷邏輯：</b>穿透性 = 定價驅動因子是「結構性慢變量」（供需路徑、庫存、運距、產能、政策路徑）而非「情緒性快變量」。慢變量單向釋放、有慣性、可被後續數據反覆坐實，適合順勢趨勢單 + 移動止損。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>穿透邏輯（驅動變量／傳導機制／時間尺度／失效條件）</th></tr></thead>
+<tbody>
+<tr><td colspan='5' class='na'>本項沒有足夠穿透性的表達，不設趨勢單。</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-defense">二、防守性強（波動有限、情緒退潮快、適合對沖或短打）</h2>
+<div class="logic"><b>判斷邏輯：</b>由情緒性快變量（避險溢價、隱含波動率）驅動，屬「脈衝-衰減」。不適合裸持趨勢單，適合對沖腿或短打。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品</th><th>角色</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>防守性質（為何穿透性弱／為何防守性強／風險）</th></tr></thead>
+<tbody>
+<tr><td>台積電 ADR</td><td class='na'>供應鏈尾部對沖（觸發前不建倉）</td><td class='price'>$405.49<br><span class='warn'>快照未含 TSM；以同日 NVDA=166.19 為同族對照錨，TSM 建倉前請以即時報價為準</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>400.0</span><br><span class='tag'>SL</span><span class='sl'>425.0</span><br><span class='tag'>TP</span><span class='tp'>360.0</span><br><span class='warn'>今日下跌主因 Nvidia 非台海</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>封鎖情境</span><span class='mech'><span class='mech-label'>為何穿透性弱：</span>今日無台海獨立定價信號</span><span class='mech'><span class='mech-label'>為何防守性強：</span>供應鏈集中、封鎖直接衝擊</span><span class='mech'><span class='mech-label'>風險：</span><span class='risk'>把 Nvidia 人事噪音誤當台海訊號</span></span></td></tr><tr><td>SPDR 標普 500 ETF</td><td class='na'>大盤尾部 put 對沖</td><td class='price'>$757.12<br><span class='warn'>yahoo SPY 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>750.0</span><br><span class='tag'>SL</span><span class='sl'>772.0</span><br><span class='tag'>TP</span><span class='tp'>710.0</span><br><span class='warn'>VIX 18.70，價外 put 便宜</span></td><td class='logic-cell'><b>驅動變量：</b><span class='var'>尾部風險</span><span class='mech'><span class='mech-label'>為何穿透性弱：</span>今日無觸發</span><span class='mech'><span class='mech-label'>為何防守性強：</span>低機率高衝擊最適合價外 put</span><span class='mech'><span class='mech-label'>風險：</span><span class='risk'>無事件時 put 權利金損耗</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-both">三、可兼顧兩者（進可攻、退可守）</h2>
+<div class="logic"><b>判斷邏輯：</b>兼顧型 = 結構（進攻）+ 對沖（防守）內建於同一結構。能過濾整體 beta，只保留與本則新聞對應的純命題。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>產品/結構</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>攻守兼顧邏輯（進攻源／防守源／為何抗噪）</th></tr></thead>
+<tbody>
+<tr><td>NVIDIA（半導體供應鏈尾部空頭代理）</td><td class='dir-short'>SELL（尾部）</td><td class='price'>$166.19<br><span class='warn'>yahoo NVDA 19:00 ET</span></td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>170.0</span><br><span class='tag'>SL</span><span class='sl'>178.0</span><br><span class='tag'>TP</span><span class='tp'>148.0</span></td><td class='logic-cell'><span class='mech'><span class='mech-label'>進攻源：</span>封鎖情境直接衝擊對台積電高度依賴的 NVDA</span><span class='mech'><span class='mech-label'>防守源：</span>今日已因 CEO 人事走弱，單一 ticker 可控風險</span><span class='mech'><span class='mech-label'>為何抗噪：</span>以單一半導體龍頭表達台海供應鏈尾部，平時零成本監控、觸發才建倉</span></td></tr>
+</tbody>
+</table>
+</div>
+
+
+<h2 class="s-strat">四、策略推薦（事件驅動視角，附觸發條件）</h2>
+<div class="table-scroll">
+<table>
+<thead><tr><th>策略</th><th>類型</th><th>交易價位（Limit / SL / TP）</th><th>邏輯 / 觸發條件（進場理由／工具選擇／加碼／止損反手）</th></tr></thead>
+<tbody>
+<tr><td>策略 A｜尾部對沖（條件觸發，暫不建倉）</td><td>監控</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>750.0</span><br><span class='tag'>SL</span><span class='sl'>772.0</span><br><span class='tag'>TP</span><span class='tp'>710.0</span><br><span class='warn'>SPY 757.12、NVDA 166.19</span></td><td class='logic-cell'><b>進場理由：</b>官方確認大規模圍台演習或航道實質干擾才啟動<span class='mech'><span class='mech-label'>工具選擇：</span>NYSE:SPY 價外 put + 即期 USD/CNH 多 + NYSE:TSM 空</span><span class='mech'><span class='mech-label'>觸發加碼：</span>封鎖情境確認後分批</span><span class='mech'><span class='mech-label'>觸發止損/反手：</span><span class='risk'>方向衝突提醒：避險腿（GC 多/TLT 多/USD/JPY 空）與第③項完全相反，觸發前不建倉</span></span></td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</section>
+
+
+<section class="tradebook">
+<h2 class="s-strat">綜合交易列表（彙總今日全部新聞）</h2>
+<div class="logic" style="margin:12px;"><b>用法：</b>這是把上面各則新聞去重後的可執行場內品種清單。只含具體 ticker/合約，並附數字現價與 Limit/SL/TP。</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>#</th><th>產品（venue/ticker）</th><th>方向</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>關聯新聞</th><th>綜合邏輯</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>黃金連續<br><span class='warn'>COMEX / GC</span></td><td class='dir-short'>SELL</td><td class='price'>$3,884.80</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>3920.0</span><br><span class='tag'>SL</span><span class='sl'>3985.0</span><br><span class='tag'>TP</span><span class='tp'>3600.0</span></td><td>3</td><td class='logic-cell'>今日唯一行動級、方向最明確。10Y 破 5.10%、12 月升息押注 85–90%、美元 19 月高，實質利率上行持續壓制無息黃金；每次 Fed 發言/CPI 可反覆驗證。</td></tr><tr><td>2</td><td>20+ 年美債 ETF<br><span class='warn'>NASDAQ / TLT</span></td><td class='dir-short'>SELL</td><td class='price'>$79.72</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>81.0</span><br><span class='tag'>SL</span><span class='sl'>82.5</span><br><span class='tag'>TP</span><span class='tp'>76.5</span></td><td>3</td><td class='logic-cell'>殖利率曲線前端劇烈重定價、2Y 單日跳升約 19bp，升息路徑續走；久期彈性使 TLT 空頭回報對殖利率上行最敏感。</td></tr><tr><td>3</td><td>美元/日圓<br><span class='warn'>即期 / USD/JPY</span></td><td class='dir-long'>BUY</td><td class='price'>159.891</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>159.0</span><br><span class='tag'>SL</span><span class='sl'>158.3</span><br><span class='tag'>TP</span><span class='tp'>162.5</span></td><td>3</td><td class='logic-cell'>美日利差擴大把 USD/JPY 推向 160，是利率主軸最高 beta 的 G10 表達；須留意日本當局干預作為反手觸發。</td></tr><tr><td>4</td><td>柴油裂解（HO 多 / CL 空）<br><span class='warn'>NYMEX / HO-CL</span></td><td class='dir-long'>做闊</td><td class='price'>$4.2822</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>4.15</span><br><span class='tag'>SL</span><span class='sl'>3.95</span><br><span class='tag'>TP</span><span class='tp'>4.80</span></td><td>1, 2</td><td class='logic-cell'>錨 HO=F 4.2822（對 CL=F 88.78，裂解約 $91/桶）。荷莫茲中斷+烏克蘭打俄煉廠+Rosneft 限售，三條新聞同指成品油緊；做空原油腿過濾沙國增產壓低整體油價的噪音。</td></tr><tr><td>5</td><td>Brent–WTI 價差（多 BRN / 空 CL）<br><span class='warn'>ICE/NYMEX / BRN-CL</span></td><td class='dir-long'>做闊</td><td class='price'>$95.78</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>94.0</span><br><span class='tag'>SL</span><span class='sl'>92.5</span><br><span class='tag'>TP</span><span class='tp'>99.0</span></td><td>1</td><td class='logic-cell'>錨 Brent BZ=F 95.78（對 CL=F 88.78，價差約 7.0）。荷莫茲為純海運事件，Brent 比 Cushing WTI 更敏感；做多價差可只押中東海運中斷而不押絕對油價，避開增產拉鋸。</td></tr><tr><td>6</td><td>Marathon Petroleum<br><span class='warn'>NYSE / MPC</span></td><td class='dir-long'>BUY</td><td class='price'>$412.85</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>408.0</span><br><span class='tag'>SL</span><span class='sl'>392.0</span><br><span class='tag'>TP</span><span class='tp'>448.0</span></td><td>2</td><td class='logic-cell'>純煉廠直接受益柴油裂解走闊；俄煉廠連遭打擊與國內限售給裂解結構性支撐，個股作裂解主題的股權表達。</td></tr><tr><td>7</td><td>取暖油/柴油 front<br><span class='warn'>NYMEX / HO</span></td><td class='dir-long'>BUY</td><td class='price'>$4.2822</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>4.20</span><br><span class='tag'>SL</span><span class='sl'>3.95</span><br><span class='tag'>TP</span><span class='tp'>4.80</span></td><td>1, 2</td><td class='logic-cell'>中東餾分油出口受阻+俄成品油缺口的最直接單邊載具；有裂解與庫存反覆驗證，穿透性優於原油本身。</td></tr><tr><td>8</td><td>Valero<br><span class='warn'>NYSE / VLO</span></td><td class='dir-long'>BUY</td><td class='price'>$374.95</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>368.0</span><br><span class='tag'>SL</span><span class='sl'>352.0</span><br><span class='tag'>TP</span><span class='tp'>410.0</span></td><td>2, 4</td><td class='logic-cell'>同時受益柴油裂解走闊與委國重油回流（重油折價擴大利好高複雜度美灣煉廠），是兩條新聞交集的股權表達，但委國屬慢變量。</td></tr><tr><td>9</td><td>Brent 原油連續<br><span class='warn'>ICE / BRN</span></td><td class='dir-long'>BUY（偏雙向）</td><td class='price'>$95.78</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>94.0</span><br><span class='tag'>SL</span><span class='sl'>89.5</span><br><span class='tag'>TP</span><span class='tp'>104.0</span></td><td>1</td><td class='logic-cell'>荷莫茲實質關閉與四艘油輪襲擊給 Brent 地緣溢價，比 WTI 對海運中斷更敏感；但沙國增產對沖，偏多且須留意回落，倉位小於裂解結構。</td></tr><tr><td>10</td><td>SPDR 標普 500 ETF<br><span class='warn'>NYSE Arca / SPY</span></td><td class='dir-short'>SELL</td><td class='price'>$757.12</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>762.0</span><br><span class='tag'>SL</span><span class='sl'>772.0</span><br><span class='tag'>TP</span><span class='tp'>735.0</span></td><td>3, 5</td><td class='logic-cell'>高利率收緊風險胃納為第③項利率主軸的股權延伸，並兼作第⑤項台海尾部的大盤對沖腿；VIX 18.70 下亦可用價外 put 表達，小倉位短打。</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+
+<section class="tradebook finalbook">
+<h2 class="s-both">地緣×宏觀｜多空角力後最推薦</h2>
+<div class="logic" style="margin:12px;"><b>用法：</b>在上方「綜合交易列表」基礎上，再疊加利率/通膨/美元/風險偏好等宏觀因素；
+只保留多頭與空頭互相角力後仍站得住的精選單。信心欄：高 / 中 / 觀察。</div>
+<div class="logic" style="margin:12px;"><b>裁決總結：</b>今日地緣與宏觀疊加的裁決結論是：利率主軸壓過一切。熱 CPI（連三個月 0.3% 核心）+ 強就業把 12 月升息鎖死在 85–90%，10Y 破 5.10%、美元創 19 月高，直接壓垮黃金並重定價美債前端。地緣（荷莫茲四艘油輪、烏克蘭打俄煉廠）不是獨立行情，反而透過『油價→通膨→更緊 Fed』強化了同一條利率空頭敘事，而非對沖它。多空角力中，空方（做空 GC/TLT、做多 USD/JPY）因驗證頻率高、方向清晰而勝出；油價只走裂解與 Brent-WTI 價差這類『過濾增產噪音』的相對結構，不押絕對多頭。台海與委內瑞拉為尾部/慢變量，觸發前不建倉。</div>
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>#</th><th>產品（venue/ticker）</th><th>方向</th><th>信心</th><th>現時價格</th><th>交易價位（Limit / SL / TP）</th><th>多空角力與裁決</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>黃金連續<br><span class='warn'>COMEX / GC</span></td><td class='dir-short'>SELL</td><td>高</td><td class='price'>$3,884.80</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>3920.0</span><br><span class='tag'>SL</span><span class='sl'>3985.0</span><br><span class='tag'>TP</span><span class='tp'>3600.0</span></td><td class='logic-cell'><b>多頭：</b>宏觀：央行實物買盤與潛在債務貨幣化提供長期底部；地緣：荷莫茲四艘油輪襲擊與台海尾部可隨時引爆避險買盤推升金價。<br><b>空頭：</b>宏觀：10Y 5.10%、12 月升息 85–90%、美元 19 月高，實質利率上行與美元強勢雙壓；地緣：今日驅動黃金的是油價→通膨→升息而非避險，安全需求未設定節奏。<br><b>角力裁決：</b>多空角力下空方占優：三次連續 0.3% 核心 CPI 把升息預期鎖死，持有無息黃金的機會成本每日累積；只要台海不升級、Fed 不轉鴿，方向與驗證頻率都最清晰，優於油價雙向拉鋸的多頭。<br><b>執行：</b>以利率主軸做空黃金為當前核心基準部位。</td></tr><tr><td>2</td><td>20+ 年美債 ETF<br><span class='warn'>NASDAQ / TLT</span></td><td class='dir-short'>SELL</td><td>高</td><td class='price'>$79.72</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>81.0</span><br><span class='tag'>SL</span><span class='sl'>82.5</span><br><span class='tag'>TP</span><span class='tp'>76.5</span></td><td class='logic-cell'><b>多頭：</b>宏觀：殖利率近 5.1% 已部分反映升息，接近目標或可回檔；地緣：台海升級或股市劇震會觸發美債避險買盤壓低殖利率。<br><b>空頭：</b>宏觀：連三個月 0.3% 核心 CPI+強就業+油價反彈再推通膨預期，2Y 單日跳 19bp 顯示 Fed 重定價未完；地緣：荷莫茲溢價推油價反而強化通膨與緊縮敘事。<br><b>角力裁決：</b>升息路徑向上重定價尚未結束、名目 GDP 增長支撐更高殖利率，TLT 久期彈性最大；相較 GC 更純粹表達利率主軸，避開黃金的央行買盤底部干擾。<br><b>執行：</b>殖利率上行的久期彈性空頭，與 GC 空互補。</td></tr><tr><td>3</td><td>柴油裂解（HO 多 / CL 空）<br><span class='warn'>NYMEX / HO-CL</span></td><td class='dir-long'>做闊</td><td>中</td><td class='price'>$4.2822</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>4.15</span><br><span class='tag'>SL</span><span class='sl'>3.95</span><br><span class='tag'>TP</span><span class='tp'>4.80</span></td><td class='logic-cell'><b>多頭：</b>地緣：荷莫茲中斷+烏克蘭打俄五大煉廠+Rosneft 限售，成品油供給缺口可累積；宏觀：高油價雖推通膨，但成品油緊的結構獨立於絕對油價。<br><b>空頭：</b>地緣：和談推進與沙國增產 26% 可能同時壓低原油與緩解成品油；宏觀：若經濟放緩拖累柴油需求，裂解走闊受限。<br><b>角力裁決：</b>相較單押油價多頭（被沙國+委國增產對沖），裂解結構把事件真正衝擊（成品油而非全球原油）隔離出來，是地緣訊號最乾淨的表達，故優先於 BRN-CL 絕對方向。<br><b>執行：</b>以成品油緊/原油鬆的裂解結構承接兩條地緣新聞；錨 HO=F 4.2822 對 CL=F 88.78。</td></tr><tr><td>4</td><td>美元/日圓<br><span class='warn'>即期 / USD/JPY</span></td><td class='dir-long'>BUY</td><td>中</td><td class='price'>159.891</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>159.0</span><br><span class='tag'>SL</span><span class='sl'>158.3</span><br><span class='tag'>TP</span><span class='tp'>162.5</span></td><td class='logic-cell'><b>多頭：</b>宏觀：美日利差擴大、美元擊敗所有主要貨幣，利率主軸最高 beta；地緣：地緣避險今日未壓過利差，淨方向仍偏多。<br><b>空頭：</b>宏觀：160 一帶是日本當局干預敏感區，追高報酬不對稱；地緣：台海或中東突發升級會瞬間引爆日圓避險、USD/JPY 翻空。<br><b>角力裁決：</b>方向與利率主軸一致且流動性深，但因干預與地緣尾部雙重風險，conviction 僅中、倉位小於 GC/TLT；保留作美元籃子的高 beta 表達。<br><b>執行：</b>利差多頭，嚴設 158.3 止損防干預與避險翻轉。</td></tr><tr><td>5</td><td>Marathon Petroleum<br><span class='warn'>NYSE / MPC</span></td><td class='dir-long'>BUY</td><td>觀察</td><td class='price'>$412.85</td><td class='lvl'><span class='tag'>Limit</span><span class='lim'>408.0</span><br><span class='tag'>SL</span><span class='sl'>392.0</span><br><span class='tag'>TP</span><span class='tp'>448.0</span></td><td class='logic-cell'><b>多頭：</b>地緣：俄煉廠連遭打擊+荷莫茲中斷給柴油裂解結構性支撐，純煉廠直接受益；宏觀：高利率下能源為少數具現金流與定價力的板塊。<br><b>空頭：</b>宏觀：高利率+AI 投資疑慮壓制整體股市風險胃納（SPY 757.12、VIX 18.70 顯示避險升溫）；地緣：和談與增產可能快速收斂裂解，個股消息面反彈易回。<br><b>角力裁決：</b>作為裂解主題的股權腿，與 HO-CL 期貨腿互補但 beta 更高、回撤更大，故降為觀察級短打；嚴格移動止損，不當主升浪拿。<br><b>執行：</b>裂解主題的股權短打，嚴守 392 止損。</td></tr>
+</tbody>
+</table>
+</div>
+
+</section>
+
+<div class="summary">
+  <h2>多則新聞如何互相拉扯（組合層）</h2>
+  <blockquote>利率定生死、地緣只加通膨柴火——做空黃金與長債為王，油價只玩裂解不押絕對方向。</blockquote>
+  <blockquote>多條新聞的方向拉扯集中在三處：黃金（第③空 vs 第⑤尾部多）、美債 TLT（第③空 vs 第⑤尾部多）、USD/JPY（第③多 vs 第⑤尾部空）。組合層一律以利率主軸（第③項）為當前基準部位，台海（第⑤項）僅作尾部對沖觸發條件，不同時反向持倉以免自我對沖歸零。油價端把第①②④的多/空意見收斂為裂解（HO-CL，錨 4.2822/88.78）與 Brent-WTI 價差（錨 95.78/88.78）兩個相對結構，而非絕對油價方向，避免荷莫茲多頭與委國增產空頭互相抵銷；委國（第④）只走煉廠股權腿、不加 CL 空以免與油價價差結構打架。</blockquote>
+</div>
+<div class="disc">
+  ⚠️ <strong>價位性質說明：</strong>上表為依各則新聞主命題設定的<strong>示意技術價位</strong>（必須含數字：round number + 近期結構高低），非投資建議，非精算模型輸出。<br>
+  🟢 <strong>場內硬性：</strong>只列具體可交易 ticker/合約；不含俄羅斯主權債、OTC 主權利差、OVX/BDTI 等無法零售下單品種。<br>
+  📌 圖例：<span class="lim">Limit=入場</span> ／ <span class="sl">SL=止損</span> ／ <span class="tp">TP=獲利</span>。<br>
+  Generated 2026-11-12 19:55 ET · Model Claude-Opus-4.8 · Hosted on GitHub Pages
+</div>
+</div>
+</body>
+</html>
